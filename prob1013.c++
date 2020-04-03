@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/partition-array-into-three-parts-with-equal-sum/
 
+
+// METHOD 1:-
 // Time Complexity:-O(N).
 // Space Complexity:-O(1).
 
@@ -37,5 +39,44 @@ public:
         else
             return false;
         
+    }
+};
+
+// METHOD 2:-
+
+// Time Complexity:- O(N).
+// Space Complexity:- O(1).
+
+// Approach:-
+// Initially we will calculte the sum of whole array and check that is it divisible by 3 or not. If the totalsum is not
+// divisible by 3 than we return false otherwise go further. Now we will make two variables locating start and end and than 
+// try to capture target sum(totalsum/3) from start and end and if we will found that on condition that start<=end than 
+// return true otherwise return false.
+
+
+class Solution {
+public:
+    bool canThreePartsEqualSum(vector<int>& A) {
+        int totalsum=0;
+        int i=0;
+        for(;i<A.size();i++)
+            totalsum+=A[i];
+        
+        if(totalsum%3!=0)
+            return false;
+        
+        int start=0,end=A.size()-1;
+        int sumstart=A[start++],sumlast=A[end--];
+        do
+        {
+            if(sumstart!=totalsum/3)
+                sumstart+=A[start++];
+            if(sumlast!=totalsum/3)
+                sumlast+=A[end--];
+            if(start<=end&&sumstart==totalsum/3&&sumlast==totalsum/3)
+                return true;
+        }while(start<end);
+        
+        return false;
     }
 };
