@@ -68,3 +68,44 @@ public:
             return false;
     }
 };
+
+Approch:-
+    Using Stack .
+
+bool backspaceCompare(string S, string T) {
+        stack<char> store;
+        
+        for(int i=0;i<S.size();i++)
+            if(S[i]!='#')
+                store.push(S[i]);
+            else
+                if(!store.empty())
+                    store.pop();
+        
+        S.clear();
+        while(!store.empty())
+        {
+            S=store.top()+S;
+            store.pop();
+        }
+        
+        for(int i=0;i<T.size();i++)
+            if(T[i]!='#')
+                store.push(T[i]);
+            else
+                if(!store.empty())
+                    store.pop();
+        
+        T.clear();
+        while(!store.empty())
+        {
+            T=store.top()+T;
+            store.pop();
+        }
+        
+        
+        if(S==T)
+            return true;
+        else
+            return false;
+    }
