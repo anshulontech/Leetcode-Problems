@@ -5,7 +5,7 @@
 
 // Approach:-
 // Initially we make a unordered_map and initialize it with value(0,1).Now we will iterate the map and keep updating the 
-// value of sum and also will check that is map contains value sum-k , of yes than we add A[sum-k] to res which represents 
+// value of sum and also will check that is map contains value sum-k , if yes than we add A[sum-k] to res which represents 
 // that by how much ways we can reach there and after checking this we will update the value of sum to the map with value
 // (sum,1) and keep checking for next one. At last we return the value of res.
 
