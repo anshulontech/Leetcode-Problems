@@ -1,5 +1,12 @@
 // https://leetcode.com/problems/number-complement/
 
+// Time Complexity:-O(N).
+// Space Coplexity:-O(N).  Where N is number of bits.
+    
+// Approach:-
+//     We will first convert number into binary form than taking it's complement by changing 1 to 0 and 0 to 1 and than change 
+// the complement form into it's decimal form.
+
 class Solution {
 public:
     int findComplement(int num) {
