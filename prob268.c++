@@ -1,5 +1,6 @@
 // https://leetcode.com/problems/missing-number/
 
+// Method 1:-
 // Time Complexity:-O(N).
 // Space Compexity:-O(1).
     
@@ -17,5 +18,28 @@ public:
             res=res^i^nums[i];
         
         return res^i;
+    }
+};
+
+
+// Method 2:-
+// Time Complexity:-O(N).
+// Space Compexity:-O(1).
+    
+// Approach:-
+//     We will first calculate the total sum of elements in the list and than we will get the total sum of elements with len+1
+// elements atrting from 0 and than the missing number is the difference between total and sum.
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+        int sum=0;
+        int len=nums.size();
+        for(int i=0;i<len;i++)
+            sum+=nums[i];
+        
+        int total=(len+1)*len/2;
+        
+        return total-sum;
+        
     }
 };
