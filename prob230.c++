@@ -43,7 +43,7 @@ public:
     }
 };
 
-Same Approach using itteration : -
+// Same Approach using itteration : -
 
                                  class Solution
 {
