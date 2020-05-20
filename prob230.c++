@@ -42,3 +42,30 @@ public:
         
     }
 };
+
+Same Approach using itteration : -
+
+                                 class Solution
+{
+public:
+    int kthSmallest(TreeNode *root, int k)
+    {
+        stack<TreeNode *> store;
+
+        while (true)
+        {
+            while (root)
+            {
+                store.push(root);
+                root = root->left;
+            }
+
+            root = store.top();
+            store.pop();
+            if (--k == 0)
+                return root->val;
+
+            root = root->right;
+        }
+    }
+};
