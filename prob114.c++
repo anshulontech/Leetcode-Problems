@@ -4,10 +4,10 @@
 // Space Complexity:-O(N).
 
 // Approach:-
-//     As we know that what is happening here is that for any node the right node of that node will become the right 
-// node of rightmost node of it's left subtree . Hence here what we are going to do is that make the right child of a 
-// node to it's left sub tree's rightmost right child. After this we will make left child to right child and make it's 
-// left child NULL and so on.
+//     In this Problem What we are going to do is to change the left child of a node to be it's right child and than making right child
+// be the right child of rightmost node in left subtree. So here on first Node we will first find the rightmost node and than making
+// right child of root to be the right child of rightmost node of left subtree. Now after this we will make left child to be it's right 
+// child and make left child NULL and so on. Similarly we will follow the process for all nodes present in the tree. 
     
     
     
