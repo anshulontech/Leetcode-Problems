@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 
-// Time Complexity:-O(N).
+// Time Complexity:-O(N). 
 // Space Complexity:-O(N).
 
 // Approach:-
