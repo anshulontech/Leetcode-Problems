@@ -48,3 +48,35 @@ public:
         return true;
     }
 };
+
+// Time Complexity:-O(N).
+// Space Complexity:-O(1).
+
+// Approach:-
+//     I this we are using an array of size 26 and than for each s[i] increase it's respective count in vector and for each
+// t[i] decrease it's respective count in vector. Now we will traverse the vector again if at any point count is not 0 than we 
+// will return false.
+
+class Solution
+{
+public:
+    bool isAnagram(string s, string t)
+    {
+        if (s.size() != t.size())
+            return false;
+
+        vector<int> store(26);
+
+        for (int i = 0; i < s.size(); i++)
+        {
+            store[s[i] - 'a']++;
+            store[t[i] - 'a']--;
+        }
+
+        for (int i = 0; i < 26; i++)
+            if (store[i])
+                return false;
+
+        return true;
+    }
+};
