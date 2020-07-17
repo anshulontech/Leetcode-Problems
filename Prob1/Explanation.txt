@@ -1,0 +1,22 @@
+Approach 1 :-
+
+Time Complexity:-O(N*N).
+Space Complexity:-O(1).
+
+In this approach we will assume that the one of the element from the result set is at ith index. Now we will start
+to traverse the array from i+1 index and would find another number such that their sum will become equal to result,
+if this will happen than at that instance we will return the index of these two elements otherwise we will assume 
+that the first element is i+1 th element and than will check for that and so on.
+
+Approach 2 :-
+
+Time Complexity:- O(N).
+Space Complexity:-O(N).
+
+In this approach we are going to us the unordered map which will help us to store the number and it's corresponding 
+index. Let us we will itterate the array and we are at index i, so now we will see in the map that is target-nums[i]
+number exist in the map or not, if it is that than it simply means that we found the two numbers and hence we can 
+return their indexes (one from the map and the other is on which we are standing.) But if target-nums[i] is not present
+in the map than we will add nums[i] with i in map so that if future for index j target-nums[j] become equal to nums[i]
+than in that case we will return {i,j}. So by doing this we are itterating the array only ones and hence it's time 
+Complexity become O(N).
