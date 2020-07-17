@@ -1,0 +1,16 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this approach what we are going to do is that we are forming an another linked list to store the list of size 
+equal to mamimum of the both the given list . Now what we are going is that we will first calculate the sum of 1st
+node's value of list , if it goes greater than 9 than we have a carry 1 to add to next node and than we will put 
+sum%10 value to the result list's first node , than we will check for the second node and so on.
+
+Now what if any list terminate first than the loop remains continue and the value taken from this list is 0 and hence 
+now we are just adding only one list.
+
+At last we will also check that is the value of carry is greater than 0 or not, if it is than we will add another 
+node at the end of reult list to store that carry otherwise we will simply return the list.
+
