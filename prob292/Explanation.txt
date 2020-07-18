@@ -1,0 +1,28 @@
+Approach 1 :- (dp Approach).
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this we are using a dp array to store the result of all the states from 1 to n, and for determining the current 
+state result we will check the last 3 states that if any of last 3 state if false than we will land at that poisition
+by removing respective stones and than the array will represent that from this state the person who plays from this 
+will definately looses game and hence now it's opponent turn hence he will loose the game, so in this what we are doing 
+is that if any of last 3 contains False than we will win the game else we will loose the game , so in this we are
+checking only for the last three and at last return the value store at n-1 index.
+
+Approach 2 :- (Math).
+
+Time Complexity:-O(1).
+Space Complexity:-O(1).
+
+On observation of above approach it is found that if number of stones are multiple of 4 than we will loose the game
+else we can win it.
+
+Observation:-
+
+For n=20;
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19.
+T, T, T, F, T, T, T, F, T, T,  T,  F,  T,  T,  T,  F,  T,  T,  T,  F.
+
+         ^           ^             ^               ^               ^. --> On thses Places we can loose the game.
+                                                                          As these are the multiple 4 as observation so if number of stones are multiple of 4 than we will loose the game.
