@@ -1,0 +1,16 @@
+Approach 1 :- 
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Insert Function:
+
+In this we are going to use the trie data structure. Here we are storing the key string in a trie and at end of 
+each character we will update the value of the corresponding value with the given value. For the similar string 
+we are using a map to store the latest value for a string and if similar string occurs again than we will decrease
+previous value of the string from the new value and than add the new obtained value to all prefix string. So by 
+doing this we can store the whole prefix strings with corresponding values.
+
+Sum Function:-
+In this we will traverse the trie data structure for the give string if the given string is present in the trie 
+than we will return the corresponding value else we will return 0 if this string doesn't exist.

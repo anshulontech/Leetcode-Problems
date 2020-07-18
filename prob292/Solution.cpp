@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+
+using namespace std;
+
 // Approach 1:-  (Time Limit Exceed).
 
 class Solution
@@ -34,3 +40,23 @@ public:
         return !(n % 4 == 0);
     }
 };
+
+// Main Function
+
+int main()
+{
+    cout << "Enter Number fo Stones:-" << endl;
+    int n;
+    cin >> n;
+
+    Solution result;
+
+    bool ans = result.canWinNim(n);
+
+    if (ans)
+        cout << "You can win the game if you will play smartly.";
+    else
+        cout << "You can not win the game in any condition.";
+
+    return 0;
+}
