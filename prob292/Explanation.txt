@@ -25,4 +25,4 @@ For n=20;
 T, T, T, F, T, T, T, F, T, T,  T,  F,  T,  T,  T,  F,  T,  T,  T,  F.
 
          ^           ^             ^               ^               ^. --> On thses Places we can loose the game.
-                                                                          As these are the multiple 4 as observation so if number of stones are multiple of 4 than we will loose the game.
+                                                                          As the places where we loose the game are multiple of 4 hence if number of stones are multiple of 4 we will return false representing that we loose the game else return true which represents that we win the game.
