@@ -10,7 +10,7 @@ will definately looses game and hence now it's opponent turn hence he will loose
 is that if any of last 3 contains False than we will win the game else we will loose the game , so in this we are
 checking only for the last three and at last return the value store at n-1 index.
 
-Approach 2 :- (Math).
+Approach 2 :- (Math Approach).
 
 Time Complexity:-O(1).
 Space Complexity:-O(1).
