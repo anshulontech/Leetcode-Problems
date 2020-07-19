@@ -1,0 +1,13 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+The basic thing which appes in inary is that it is same as that of base 10 but the difference here arises is that in all places of 10 the number 2.
+So in this approach we are using this property for example for getting carry we will divide the rsult by 2 for getting absolute value we will take 
+modulo with 2 . Let say the bits are 1 ans 0 than their sum become 1 so from this to calculate carry we will use 1/2 and for getting absolute value 
+we will make 1%2 which will give us 0 and 1 respectively which are correct. Now let us take the bits are 1 and 1 ans the previous carry is also 1 than 
+their sum is 3 so the carry will be 3/2 =1 and the absolute value ate that index is 3%2 =1 which are correct. So in this we are going to use this 
+concept. Now as the first bit in string is at last index so we are goung to traverse the string from last and going to add the result in last to the 
+result string and at last we will reverse this string to obtain the corect result.This is done so as to reduce the time for adding a number to the starting
+of a string(Now it takes O(1) else it takes O(n)).
