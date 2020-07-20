@@ -1,0 +1,23 @@
+Approach 1 :- (No iterator class is used.)
+
+Time Complexity:-O(N). 
+Space Complexity:-O(N).
+
+In this approach we are using a deque to store the element in given order and on each query we will return answer from the front.
+
+peek function:-
+    In this we will return the element at the front of the deque without removing the front element.
+
+next function:-
+    We will remove the top element and than return that one.
+
+hasNext function:-
+    If the deque is empty than it reprsents that no next element is present hence we will retrun false otherwise we will return true.
+
+
+Approach 2 :- (Using Predefined Iterator class)
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this approach we will use a Predefined class iterator which has all these functions already written in that so we will diresctly use them.
