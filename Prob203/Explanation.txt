@@ -1,0 +1,10 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Initially we will first elemenate the nodes with their value equal to val in the beginning. Now after this we will mark head to the first node node
+in the list whose value is not equal to val. After this we will use a temp pointer to iterate the list. Initially temp points to new head of the list.
+If the next node of temp has value equal to val than to remove this node what we are doing is that the next of temp now represents to next node of temp's
+next node , so by doing this the temp's next node whose value is equal to val is no longer be a part of the list and by doing so we can remove all the 
+node in the list with value val.
