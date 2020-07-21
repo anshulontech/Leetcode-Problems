@@ -1,0 +1,10 @@
+Approach 1 :- 
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N).
+
+In this what we are going to do is to make all points as base points one by one so for this we are using a for loop. Now lwt us assume the first point
+as the base point than we will calculate the distance of all the points with from base point and than store it in the map. Now we will traverse the map 
+and apply permutation like if any length l has k paths that is k paths have length l than the number of possible tuples formed are k(k-1) so we will 
+add that number to the final result. Now we will make second element as the base element and perform same operation than for third , forth and so on.
+After each pass we have to clear the map so that previous data will get erased from the map and map will be like new one.
