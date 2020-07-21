@@ -1,0 +1,10 @@
+Approach 1 :- 
+
+Time Complexity:-O(N).
+Space Compleixty:-O(N). For Recurssion stack.
+
+To solve this problem we are going to use Recurssion. Using recurssion we will first find the node that has
+value equal to key , let say that node as head , now if head had no right vhild than in place of head we will place
+the left subtree of the head otherwise if head has right child than we will add head left subtree to left most part
+of the head's right subtree and than in place of head we will place the newly formed right subtree and tha return the 
+root node of the tree.
