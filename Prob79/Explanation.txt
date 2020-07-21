@@ -1,0 +1,18 @@
+Approach 1 :-
+
+Time Complexity:-O(N^4). -- Worst Case.
+Space Complexity:-O(N). Fpr Recurssion Stack.
+
+To Solve This Problem We are using simple backtracking approach. So we will traverse each element of board and for each element we will call a function
+named wordFound which will tell us that is this word exist or not, if it exist than it return true and hence we will return true else we will check for
+next element in the board.
+
+wordFound Function:-
+This function contains different parameters which are clear from their name. In this we will check that is the char at index of word and at row col index
+on board are same or not, if they are not than we will retrun false and go back from this function else if the chacracters are same than for next index 
+in word we will check in board along 4 directions (top-down-left-right). If we will reach the last of the string and the last characters matches with 
+corresponding row col of board than in that case we found the word hence we will return true from that function. 
+
+A point to note is that after checking row col char in board with index char in word we will make that character equal to '.' , this is because we don't
+want to use single character repraeted many times in result that is if a character is already visited in a particular recurssion than we don't want to 
+add this one again in the answer. 
