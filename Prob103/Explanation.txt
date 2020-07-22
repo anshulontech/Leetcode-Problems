@@ -1,0 +1,9 @@
+Approach 1 :- 
+
+Time Complexiy:-O(N).
+Space Complexiy:-O(N).
+
+In this question we are going to use the concept of level order traversal in some optimised way using two stack. The first stack is used to store the nodes 
+on add depth in left to right direcction uch that top most node represents the left most node, while the secons stack store the nodes of even depth (1 index)
+nodes in right to left direction , so in a case we will first fill first stack and than make it empty by filling second stack and also storing our result
+after this we will make second stack empty with stooring result and filling first stack in order and so on.
