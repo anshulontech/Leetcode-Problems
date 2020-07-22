@@ -1,0 +1,9 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Initially we will store the count of each char in a map. Now as we know that a pallindrome is formed if we have count of all the characters as even except
+any one of them that is only sinle characters can attain odd counts while other should have count as even number. So in this what we are doing is that we 
+will first stores how many pairs can be formed in the variable sets and taking a flag which determines that is ay character has odd count in the list or not.
+At last we will return the number of pairs*2 (as we have to return length) and +1 if any character with odd count is present.
