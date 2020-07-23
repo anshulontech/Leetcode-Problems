@@ -1,0 +1,19 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this we are using a vector to store the elements as given and a map to store the element and it's corresponding index in vector. 
+
+Insert function:-
+    In this function we will push_back the element in the vector and the correonding index to the map. Also we will check that is element already exist 
+in the vector or not, if it is than we will return false else return true.
+
+Remove function:-
+    In this what we are going to so is that we will check the last index(let say i) if the value in the vector that is index near end ehich it is present , it is
+done by checking the last element from the map corresponding to value remove. After doing this we will swap the element at last in the vector with element on index i 
+and than store the next new index of the last element and than op out the last element from the vector and also pop put last indrex from map's vector. So by doing this 
+we remove the last element.
+
+getRandom Function:-
+    In this we are using rand() function to generate the random index to teh vector and than return the element at that index as random element.
