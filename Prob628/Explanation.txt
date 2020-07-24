@@ -1,0 +1,17 @@
+Approach 1 :- (Sorting) 
+
+Time Complexity:-O(N*log(N)).
+Space Complexity:-O(log(N)).--For Sorting.
+
+In this approach we will initially sort the whole array and than check the max roduct that can be formed. Now the max product that can be formed can be 
+there only from two places that is the combination of last three or combination of first two ana last one. Combination of last three is as these are the 
+maximum number in the list and cobination of first two and last one as that what if product of two negative number will become more than product of two 
+poisitive number so we have to check them like in example [-4,-3,-2,-1,60]. After getting max value from these we can retun that one as final answer.
+
+Approach 2 :- (Math)
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+On observing the above solution it is clear that there is no requirment of sort the whole array. At last we need only two minimum value and three maximum
+values so we can get them easily just by itterating the array ones. And after doing this we can get our result as done before.

@@ -1,0 +1,10 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this we are using simple technique to itterate the string in which we are traversing the string only ones but with three for loops. The outer loops runs
+til the itterator reaches the end of the string whih the first inner loop travesr for untill nonempty space character arrises if itterator move forward than 
+we will increment the value of result by 1 as it represents increment in counter else if the tring after itterator is like "    " than their is no segment 
+hence we have no need to increase the result counter. The next inner for loop runs till we will not encounter non space character and by doing this we itterates
+the whole string and have result in our hand.
