@@ -1,0 +1,7 @@
+Approach 1 :- 
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this approach we are using a unordered map to store the count of number and after doing this we will itterate the map and record the elements whose 
+count are less than 2 and store then in a vector to return the final result.
