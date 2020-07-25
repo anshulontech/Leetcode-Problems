@@ -1,0 +1,15 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this we are checking all nubers between start and end which are odd and than return their count.
+
+Approach 2 :-
+
+Time Complexity :- O(1).
+Space Complexity :- O(1).
+
+On observing with maths count of odd numbers between 1 and start-1 is start/2 and between 1 and end-1 is (end+1)/2 so we will just their difference which
+will tell us the exact result.
+

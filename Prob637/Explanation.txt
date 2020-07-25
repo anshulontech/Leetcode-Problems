@@ -1,0 +1,17 @@
+Approach 1 :- (DFS)
+
+Time Complexity:-O(N). -- N is number of nodes.
+Space Complexity:-O(H). -- H is height of tree.
+
+In this what we are going to do is to use the depth first search for the tree and by doing this we will store the total sum and number of nodes in a level 
+in a vector at index corresponding to depth (based on 0 index system). So after doing this we have the sum of all nodes in a level and total number of nodes
+on that level so now we can easily calculate the average of all nodes in a level.
+
+Approach 2 :- (BFS)
+
+Time Complexity:-O(N). -- N is number of nodes.
+Space Complexity:-O(M). -- M is max numbr of nodes in a level.
+
+In this we are using breadth first approach so that we will calculate the total sum of any depth let say 0 and than calculate it's average than go for next 
+one and do the same set of operation s here. So in this appraoch what we are doing is that we will obtain the result for a particular level first and than 
+go for the next level while in previous approach we are storing all level's data first and than manipulate with this to obtain rseult.

@@ -1,0 +1,9 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Initially we will store subarrays sum of all the subarrays starting from index 0. After doing this we will traverse this sum array with consideration that 
+if the current sum is even and we want odd sum subarray than we want to remove a subarry from the current one whose sum is odd as (odd-even =odd) or vice 
+versa. As we need only count hence in this we will take count of the subarray before which are even and which are odd , and according to above rule we will 
+calculate the subarrays that have odd count.

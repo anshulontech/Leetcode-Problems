@@ -1,0 +1,12 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Initially we will assume that string p contains 1 character and q contains rest of all. So we will store the count of each character of q in a map and 
+their occurence in a set while we will store the occurence of each character in p n another set. Now we will start to increase our itteratot representing
+that p start to extend while q start to contract. As p expands we will add the new elements of p in it's set while decrease the count of character in q , 
+at any instance when count of any character in q becomes zero representing that this character is not in set we will remove this from the set . The set 
+basically represents that the number of unique characters in the string so after each step we will check that is the size of sets arae same or not, if the 
+size of the sets are same than it represents that both contains equal number of unique characters and after itterarting the whole string we will return the 
+obtained result.
