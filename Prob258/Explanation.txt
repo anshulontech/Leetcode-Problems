@@ -1,0 +1,6 @@
+Approach 1 :-
+
+Space Compleixty:-O(1).
+
+In this what we are doing is that we are calculating the sum of the digits of the number untill we will not get the single digit number . As we get the single
+digit number we will come out of the loop and return that number as final answer.

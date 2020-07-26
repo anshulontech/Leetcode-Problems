@@ -1,0 +1,8 @@
+Approach 1:-
+
+Time Compleixty:-O(log(N)).
+Space Compleixty:-O(1).
+
+In this question we are using typical binary search algorithm with some modification that if the mid index element is found to be greater than end index element
+than it respresents that the min element lies between these two points so we will search for thsi one else if the mid is less than start than it respresents that
+than it respresents that the value lise in this interval so we will search for this and so on.

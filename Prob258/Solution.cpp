@@ -1,9 +1,4 @@
-// https://leetcode.com/problems/add-digits/description/
-
-// Space Complexity:-O(1).
-
-// Approach:-
-//     Till num will not become less tha  we will change num with the sum of digits.
+// Approach 1:-
 
 class Solution
 {
