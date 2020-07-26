@@ -1,0 +1,7 @@
+Approach 1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this we are using a new string to store the result like we will use a string of size same as given string s and than traverse the indices array and 
+put the char at index i of string s to the index indices[i] in string res. So by doing this we have the resultant string in our hand.

@@ -1,0 +1,13 @@
+Approach 1 :-
+
+Time Complexity:-O(N+k*k). -- Where N is number fo nodes and k is number of leaf nodes.
+Space Complexity:-O(N+k).
+
+In this what we are going to do is that we will use a vector to store the distance of leaf nodes traversed at a particular point that is , if we will encounter 
+with a leaf node from this point we add a distance variable(basically of type int) in the vector which is used to store the min distance traversed to reach at a
+particular nodes that is if we are standing on a node than we can check the min distance traversed to reach that point using this vector. So if we encounter again 
+a leaf node than we will check in the vector that is any distance is less than or equal to distance exist or not , if it is than it will a path for consideration 
+else not. 
+
+Now the point is how to increase the distance and how to decrease. If we are going in a subtree than first we haev to increase the distance of all the nodes while 
+returning we have to decrease the distance of the pre-existing leaf nodes but have to increase the distance for new nodes and so on.

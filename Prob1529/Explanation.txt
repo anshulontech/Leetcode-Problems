@@ -1,0 +1,14 @@
+Approach 1 :-
+
+Time Compleixty:-O(N).
+Space Copleixty:-O(1).
+
+As the starting zeroes are of no use to us so we will neglect them by incrementing the start pointer. Now as the end if the index i bulb changes it's 
+configeration than all the bulbs after thsi will change there configeration. So in this what we are going to use is that we will calculate the number of 
+change in configeration from start to end and this will give us the result.
+
+Let the final configeration is "001011101"
+
+than on first configeration ot becomes 001111111 so the change in configeration is 1 , on next step it is 001000000 now the change is 2 , for next step it is
+001011111 and change becomes 3 next step it becomes 001011100 and change becomes 4 for the next and last step it becomes 001011101 and the change is 5 . So 
+what is happening here is that the minimum number of flips are equal to change in configeration in the entire string.
