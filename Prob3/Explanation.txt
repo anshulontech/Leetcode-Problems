@@ -1,0 +1,19 @@
+Approach 1 :-
+
+Time Complexity:-O(N^2).
+Space Compleixty:-O(N).
+
+In this approach what we are going to do is that we will check for each index the max substring upto which it can be extend so that their is no repeated character
+found their. To check is their any repreated char we will use a hash set. Let say we are at index i than we will run a loop from index i and check that is current 
+element is their in the list or not if it is we will break the loop and check the length and update it but if the element is not in set we will first insert the 
+current element in the set and than go for next. So doing this for all index we can check the max length of string havin non repeated character.
+
+Approach 2 :- (sliding window).
+
+Time Complexity:-O(N).
+Space Compleixty:-O(N).
+
+In this what we are going to do is to use a window which contains the string with non repeated characters. In this to check that is current element is in the window
+we are using a set. so if the current element is not in the set than we will try to expand our window by incrementing the end pointer and adding current element to 
+the set, else we are contracting the window by incrementing start pointer and removing end char from the set. At each set of expanding window we will check the max length.
+
