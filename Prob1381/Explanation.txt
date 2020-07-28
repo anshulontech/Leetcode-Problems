@@ -1,0 +1,18 @@
+Approach 1:-
+
+Time Complexity:-O(1).
+Space Complexity:-O(N). Where N is maxSize.
+
+In this approach we are using a vector to store the elements. In this we will take care of the thing that the size of the vector will go exceed maxSize.
+
+Push Function :- 
+Time Complexity:-O(1).
+Initially we will check that is the size of the vector is less than maxSize or not if it is than we will insert the current element into it else leave it.
+
+Pop Function :-
+Time Complexity:-O(1).
+If the vector is not empty than we will remove the element from the back and return that one else retrun -1 if stack is empty.
+
+Increment Function:-
+Time Complexity:-O(K).
+We will itterate the loop from the index 0 and than increase the first k values or all values if the value of k is greater than maxSize.
