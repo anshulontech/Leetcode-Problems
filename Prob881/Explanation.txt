@@ -1,0 +1,32 @@
+Approach 1:-
+
+Time Complexity:-O(N*log(N)). 
+Space Complexity:-O(log(N)). For Sorting.
+
+Initially we will sort the entire array and mark start pointer to the start of the vector and end pointer to the end of the vector. Now think that these pointers 
+are like persons where the value of the pointers are the weight of the person. So now if the total weight of start and end person is found to be less than the limit
+than it represents that on a single boat we can transport both of them so for them only one boat is required and we will increase the start pointer and decrease the 
+end pointer reprsenting that these persons are transported else if the total weight is found to be greater than limit than we can not send both of them in a boat 
+hence in that case only the end person will be transported hence we will decrease the end pointer only. This loop will run untill all the persons are not transported
+or the end pointer will not become less than start pointer. The number of boats required is equal to number of times the loop runs , so for this we will store the 
+count that how many times the loop runs and return that one as final answer.
+
+Approach 2:-
+
+Time Complexity:-O(N). 
+Space Complexity:-O(limit).
+
+On observing the above solution carefully it is found that the max time spend is used to sort the array. Now as we know the max value of the vector so why we are not 
+using bucket sort method in this to reduce the time Complexity to O(N).
+
+So in this we are intially sort the array using the bucket sort method. In this method we use a vector of size the max value in the list and than traverse the given 
+vector and store the cout of each element in the new vector at the index equal to their value or weight. After traversing again this vector we can genetrate the sorted 
+vector again in a new vector and do the same operartion as done above. But here we are doing the later operation in solution 1 in this new generated vector to reduce 
+time and space.
+
+As same above we are using start and end pointer and run the loop while start<=end as done above. Here first we will increment the start pointer till we will not get 
+a non zero value that there would be a person their to represent  that weight similar thing we will doing for the end pointer but here we are decrementing the end pointer.
+After getting a poisition where both represents persons we will check the weight limit condition , but here if total weight is found to be less than limit than instead of 
+incrementing and decrementing pointers we will decrease the count of the person at that weight. And check for them again in next loop if their count is not zero.
+
+The total number of times the loop runs will tell us the number of boats required so we will store the count and return that one as final answer.
