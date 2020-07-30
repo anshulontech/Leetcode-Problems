@@ -1,0 +1,13 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this what we are doing is that we are ignoring the 'X' characters in both of the strings and than try to compare the poisition of other elements.
+Now lwt the i pointer represents the start string and the ned pointer represents he end string than we will increment both the pointers untill we 
+not get non-'X' character . Now if both the elements are 'L' and the start's pointer is greater than end's pointer than we can change them because 
+the character 'L' can move only to the left hence to do so the start pointer should be greater than or equal to end pointer than we can do if 
+further elements full fill the condition. Otherwise if both the characters are 'R' than start pointer should be less than or equal to end pointer 
+because 'R' can move only to the right. And if both the characters are different than in that condition we can't do so because the characters 'L' 
+and 'R' are not inter-changeable. If both the pointers reaches the end of the list at the same time than it represents that they can be interchanged 
+hence we can return true in that condition.
