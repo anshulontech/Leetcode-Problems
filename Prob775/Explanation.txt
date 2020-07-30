@@ -1,0 +1,31 @@
+As by the careful observation it is found that all the local inversions are subset of global inversions. So if we will found any global inversion 
+which is not a global inversion than we can return false as the count of global inversion becomes greater than local inversion. else if we will reach
+the end of the list than we can return true.
+
+Approach 1:- (TLE).
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(1).
+
+So to do this what we can do this that for each element we will run a loop from 2 index later and check that is their any index exist for which the 
+value is found to be less than current one, if it is than we will return false as it is a global inversion not a local inversion otherwise we will 
+check for next element and so on.
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+On above approach we are finding for each element seperately which take a lot of time.Now let us think what if we are taking account of only a single
+number and check for 2nd next element, So what that number would be. It will be the max value of the visited subarray. So if the condition is true 
+for any nuber than it should be true for max number but if it is true for max number thna it is not always possible that it should be true for every 
+element like for min element hence in this we are checking for the max value. So if the max value is found to be greater than visted subarry end 
+index's 2nd next index than it is a type of global inversion but not local hence in that case we will return false.
+
+Approach 3:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+After observing above solution it is found that we can place number i on A[i-1] or A[i] or A[i+1] so it will be easier to check that is abs(A[i]-i) 
+equal to -1,0,1 or not .
