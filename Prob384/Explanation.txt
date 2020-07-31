@@ -1,0 +1,22 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this question to we are using two seperate arrays one to store the original array and the other one to store the new generated array by swapping.
+
+In the constructur of the given calss we will set both the array to the given array.
+
+In reset function we will set the result array (arr in code ) equal to original array and than return the original array as they want origianl array 
+back.
+
+In the shuffle function what we will do is that we will run a loop from 0 index to the last and than we will swap the current element with any 
+random element in the array and than go for the next one. So by doing this we can inplace suffle the array with same probability for all combination.
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+This appraoch is same as that of above one, but here in reset function we are not making the shuffle array equal to original array back so that we 
+can save our time and just return the original array as they only want the original array.

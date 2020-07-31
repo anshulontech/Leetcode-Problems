@@ -1,0 +1,6 @@
+Approach 1:-
+
+Time Complexity:-O(1) For each Querry and O(N) For all queries.
+Space Complexity:-O(N).
+
+In this what we are doing is that we will make a vector of size N+1 named prefixSum where we will store the sum of the prefix subarray. The first element of the vector is zero representing that the initial sum is zero.No if want to give the sum of array with index i and j than we can easily return the difference between prefixSum[j+1] and prefixSum[i].
