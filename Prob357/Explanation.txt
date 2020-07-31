@@ -1,0 +1,20 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this approach we are using simple permutation and combination approach.
+
+Let us assume you have to make a 4 digit number with condition that no digit should repeat. So let us assume that we can not make first element as 0 
+than on first poistion we can place any of nine digit (1-9 both inclusive) so let us assume we put 1 at the first place so we are now left with 9 
+digits that is (0,2-9 ) so on second place we can put 9 values let us assume we put 2 their than on third place we have 8 options that is (0,3-9), 
+so assume we put 3 on 3rd poisition and for forth we have 7 possibilities. So the total number of exact 4 digit number are 9*9*8*7 with no digit 
+repeat. Now as this set does not contains 4 digit number with leading digit 0 that is 3 digit number so we put first element as 0 and than check for 
+the 3 digit number as above one which results into 9*9*8. Now as they both does not contains 2 digit number so we will calculate them as 9*9 , and 
+for one digit it is 9 and for 0 digit number it is only one case that is 0 so it add 1 to the solution (Here we are thinking that 0 is a 0 digit 
+number that is it has no digit just for better understanding). So for n=4 the total number of cases are 9*9*8*7+9*9*8+9*9+9+1=5275.
+
+So from the above discussion it is clear that for searching for N first we have to search for N than for N-1 than N-2 and so on till N becomes zero.
+So here in solution we are doing same and not checking for n=0 as it always includes 1 and always comes into picture as the min value of n is 0 so 
+we include this one in the solution already and for n greater than 0 we will check for n digit number that how many possibilities are their for n 
+digit number such that first digit is not 0 than check for n-1 and so on...
