@@ -1,0 +1,33 @@
+Approach 1:-
+
+Time Complexity:-O(1). For Each Operation.
+Space Complexity:-O(K). 
+
+In this Approach we are using a vector of size k in which we are inserting our elements. The start pointer represents the front part of the queue 
+and the end pointer represents the rear part of the queue. Here we are taking a variable named currSize which will tell us the currSize of the queue.
+
+enQueue Function:-
+If the currSize becomes equal to max size than we will return false as no element can be inserted in the queue otherwise we will increment the end 
+pointer and than insert the element their and return true. Here we are done with end=(end+1)%res.size() this is because as we are using a limited 
+amount of memory so if the end pointer reaches the end of the vector and start is not on start of vector that is queue is not in full size than on 
+incrementing the end pointer the end pointer points to part that is not a part of vector so by doing this we are pointing it back to the start 
+poisition.
+
+deQueue Function:-
+If the currSize is equal to 0 than it reprsents that the queue is empty hence no element can be popped out hence we will return false, otherwise if 
+the queue is not empty than to pop out the element from the front we will just increment the start pointer as by doing this it point to the next 
+element and leave the current or the front element.
+
+Front Function :-
+If the queue is not empty than the start pointer represents the front part of the queue hence we will return element represented by start pointer 
+otherwise return -1 showing that the queue is empty.
+
+Rear Function :-
+If the queue is not empty than the end pointer represents the rear part of the queue hence we will return element represented by end pointer 
+otherwise return -1 showing that the queue is empty.
+
+isEmpty Function:-
+If the currSize is equal to zero than it represents that the queue is empty hence we will return true else return false.
+
+isFull Function:-
+If the currSize will become equal to max size of the vector than it represents that the queue is full hence we will return true else return false.
