@@ -1,0 +1,13 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+On Observing the above it is found that we can check all the words with respect to the 2nd letter in the string. 
+
+For example if the second letter is a Capital letter than it is necessary that first letter should be capital if it is not than we can easily return 
+false otherwise return true.
+
+Now for the letters from index 2 or from 2rd letter onwards all letter's type that is isCapital should match with the 2nd letter's type that is if 
+2nd letter is Capital than all letters fter this should be capital or vice versa , if it is true that is all letter's type comes out to be same as 
+that of second letter than we can return true else will return false.
