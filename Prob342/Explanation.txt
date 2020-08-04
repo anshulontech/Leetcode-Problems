@@ -1,0 +1,15 @@
+Approach 1:-
+
+Time Complexity:-O(1).
+Space Complexity:-O(N).
+
+As the binary of the number like 4,16,64 are 100,10000,1000000 so it is clear that the binay of the number num-1 that is 3,15,63 are 11,1111,111111 
+and on doing and operation (&) there will give us 0, so we will check that is num&(num-1) is equal to 0 or not. But if the numbre is divisible by 2 
+than also it will give 0 so to check this we will find that is the num-1 is divisible by 3 or not, if it is than it means that the number is always 
+divisible by 4 so if both the conditions are true than we will retrun true else return false.
+
+Note:
+It is necessary to check weather the number are greater than 0 or not as the power function always gives positive values so if the number is less 
+than 0 than it can't be the power of 4 or any other positive number.
+
+We can also do this using recurssion but it clearly mentioned that do not use recurssion or loops to solve this problem. 
