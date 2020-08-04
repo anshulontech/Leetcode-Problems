@@ -1,0 +1,67 @@
+Symbols Used:-
+N=nums2.size(),M=nums1.size();
+
+Approach 1:-
+
+Time Complexity:-O(N*M).
+Space Complexity:-O(1). Other Than result array.
+
+In this approach what we will do is that we will traverse the whole array nums1 and for each number we will first find the poisition of that number 
+in the nums2 array and after getting the poisition let say it i we will start to itterate the nums2 array from index i and check till last that is 
+any number greater than the element at index i is there or not , if it is than we will push that element in the result array else we will return -1.
+
+Approach 2:-
+
+Time Complexity:-O(N+M).
+Space Complexity:-O(N). Other Than result array.
+
+In this approach we will use the concept of the strictly increasing monotone stack and a map to store the next greater element in the vector. So 
+according to this concept what is happening is that if we have some elements in the stack and now we are on index i than we will pop out all the 
+elements from the stack till the top of the element of the stack wil not become greater or equal to the nums2[i]. The elements which are popped out 
+have the next greater element as nums2[i] hence we will push that one to the map. After doing this we will itterate the nums1 array and if the 
+element is in the map than the answer is equal to value associated with that key in the map else the answer is -1.
+
+Example for approach2:- (Just traversing nums2 as nums1 is easy to understand)
+
+nums2={5,3,1,4,8};
+
+let name of stack is s and map is map.
+
+i=0;
+s->empty,so push nums2[i] in the stack;
+map->empty;
+
+i=1;
+s->{5};
+as stack top is greater than nums2[i] so push this one in the stack.
+map->empty;
+
+i=2;
+s->{5,3};
+as stack top is greater than nums2[i] so push this one in the stack.
+map->empty;
+
+i=3;
+s->{5,3,1};
+As stack top is less than nums2[i] so pop it out and than push it to map representing that the next greater element of 1 is 4. so now the condition 
+is as 
+        s->{5,3};
+        map->{{1,4}};
+
+    Now as the stack top is again less than nums2[i] so the again pop it out and push it to map, so the conditions are as
+        s->{5};
+        map->{{1,4},{3,4}};
+    Now the condition become false so break the loop and push the element 4 in the stack.
+
+i=4;
+s->{5,4};
+As stack top is less than nums2[i] so pop it out and than push it to map.so now the condition is as 
+        s->{5};
+        map->{{1,4},{3,4},{4,8}};
+    Now as the stack top is again less than nums2[i] so the again pop it out and push it to map, so the conditions are as
+        s->empty;
+        map->{{1,4},{3,4},{4,8},{5,8}};
+    Now the condition become false as the stack becomes empty so break the loop and push the element 8 in the stack.
+
+
+Now as the itterator reaches the end of the vector so we will now traverse the nums1 array and do the procedure(as discussed above) to obtain result.
