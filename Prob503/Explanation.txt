@@ -1,0 +1,11 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+As the given array is circular so in this what we are doing is that we are used to repeat the array from starting after traversing it for the first 
+time. So by doing this we can use the property of circuar array without copying the array again to the end. Now to solve this problem we are going 
+to use the concept of strictly increasing monotone stack. So according to this concept what is happening is that if we have some elements in the 
+stack and now we are on index i than we will pop out all the elements from the stack till the top of the element of the stack wil not become greater 
+or equal to the nums[i] where i is the current index. The elements which are popped out have the next greater element as nums[i] hence we will push 
+that one to the result vector at corresponding index.
