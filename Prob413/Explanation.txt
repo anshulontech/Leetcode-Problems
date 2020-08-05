@@ -1,0 +1,10 @@
+Approach1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Now in this approach what we are going to do is that let say we are at index i than we will check that what is max length of the Arithmetic  
+sequence from the index i in the given array. If the length is found to be greater than 2 that is more than or equal to 3 than we can say that we 
+can slice it into Arithmetic slices. So let us assume that the starting index is i and the end index is j than the number of continous slices are 
+(j-i)*(j-i-1)/2 --> This comes from the permutation and Cobination concept. So we will add that one to the answer and than making j as the starting 
+element we will again follow the above procedure.
