@@ -1,0 +1,12 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N). Used For recurssion Stack.
+
+In this what we are going to traverse the tree in inorder manner and also taking account of prev node which will tell us that what is the prev node 
+in inorder traversal. Now what is happening with this is that during inorder traversal the nodes are arranged in increasing order so all the nodes 
+with same value are traversed in same line hence we can generate there count and check that if their count is greater than max_count or not ad 
+update the answer on the basis of their status.
+
+We can also morris inorder traversal but in that consition all nodes are visited two times and hence the time complexity becomes O(2*N) and space 
+complexity remains same.
