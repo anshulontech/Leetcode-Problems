@@ -1,0 +1,10 @@
+Approach 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(1).
+
+In this question we are traversing the string ones and for each index we will check the longest palindrome formed by this. Now as the palindrome can be of even length or odd length , so for the odd length we will make th eindex as the center and itterate over both left and right and check the max length formed, but for even length their is no center or can say that center is formed using 2 indeces so in that case we will set the index and the next index as the center and than check the longest palindrome formed using this. 
+
+In revelpalindrome function we will increment the j pointer and decrement the i pointer till element at i and j are same and when they become different or the pointer goes out of bound than in that case we will check that is the length formed by them is greater than already occuring ones or not , if it is than we will update length and alos the start and end pointer of the final result. 
+
+And after doing this we will return the string formed by start and end pointer.
