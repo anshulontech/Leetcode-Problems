@@ -1,0 +1,11 @@
+Approach 1:-
+
+Time Complexity:-O(1).
+Space Complexity:-O(1).
+
+As we know that square is only quadrilateral having two different length when measured by joining any two corners. That is on joining two points you 
+can get either the edge or a diagonal and only in a square the edges are of same length and the diagonals are of same length. So if we will measure 
+all the distance between any two vertices in a square than definately there will be only two different dimensions occur. So in this problem we will 
+calculate the distance between all the pair of vertices and the result in a set , if the size of the set goes more than 2 than it represents that 
+the shape is not a square or if any distance found to be zero than also it represents that it is not a sqaure and hence if any of the condition 
+becomes false than we wil return false.

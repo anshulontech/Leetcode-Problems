@@ -1,0 +1,15 @@
+Approach 1:- (Sort+Map+Binary Search).
+
+Time Complexity:-O(N*log(N)).  -- N*log(N) to sort the array and O(N+N*log(N)) to visit the simply visit the array and on another time applying 
+binarySearch for each index.
+
+Space Complexity:-O(N)  To store the result and to store the index in map.
+
+As it is clearly mentioned that the no two intervals have the same starting point so we will first store the index of all the intervals in array in 
+a map with the key value as their first value. This is done because in further step we need to get the index of all the intervals one by one so if 
+we are storing the in a map than this will give this one to us in O(1) time else this will requires the O(N) time.
+
+Now after getting sorted with the array for each interval in the sorted array we will find the lower bound of the end of interval in the array. If 
+the corresponding index lies in the array than in that situation for the result vector we will store the obtained interval's index in orginal array 
+to the index of the current interval's index in original array. That is we will use map to find the original index of current interval and at that 
+index we will store the index of the minimum interval in the original array. So to minimise the time we use map here to store the result.
