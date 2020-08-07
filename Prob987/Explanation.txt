@@ -1,0 +1,22 @@
+Approach 1:-(DFS).
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this approach what we are going to do is that we will store the nodes with their coordinates in a nested map suing recurssion. The outer map's 
+key represents the x coordinate of the node while the inner map's key represents the y coordinate of the nodes. After traversing the whole tree we 
+will use the map to store the result. Nodes with lesser x and y coordinate comes first in the array and those with higher coordinates will occurs in 
+the last. 
+
+How does Coordinate Change:-
+
+On Moving left we wll decrease the x cooridinate while on moving down we will increase the y coordinate so what is happening here is that the outer 
+map's first element contains the left most nodes set and the first element of each outer map store the top most element in that row, so by 
+traversing in order we can generate the result. This is because we are using ordered_map which stores the elements in ascending order.
+
+Approach 2:-(BFS)
+
+Time Complexity:-O(N).
+Space Complexity:O(N).
+
+Approah is same as that above one but the difference is that their we are using recurssion but here we are using itteration.
