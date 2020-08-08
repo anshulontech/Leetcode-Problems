@@ -1,0 +1,16 @@
+Approach 1:-
+
+Time Complexity:-O(N^N).
+Space Complexity:-O(N).
+
+In this approach what we are going to do is that we will initially make a array of size N and store true for all the index which is used to 
+determine if the current value is available to use or not. Now we start to use dfs in the vector and for each index if the given conditions are true 
+than we will assume that it is now a part of our result array and hence it is not available for further use in this series. Now we will again call 
+dfs to store other numbers in the list. This time we will again start from the index 0 and check that is this element is available to use or not. If 
+it is than we will check the conditions and than proceed or if it is not available or doesn't follow the conditions than we will just go for next 
+element. If at any time the position(that is position where next element to be inserted) reaches greater than N than it represents that this is a 
+valid combination formed by previous used elements hence we can increase our counter. As on going back to each step we will make the element to use 
+again by making it's vaue equal to true.
+
+Now we can use set to go for this solution but in that case we need to use two sets or can go for swaping technique in the vector by which we can 
+swap the current element to last and than remove it and store in the combination array. All these tecniques uses the same concept.
