@@ -1,0 +1,13 @@
+Approach 1:-
+
+Time Complexity:-O(r*c).
+Space Complexity:-O(r*c).
+
+In this approach we are going for the breadth first search according to which we will first go for the rotten oranges than make their neighbour 
+oranges as rotten then the chance for their neighbour oranges comes and so on. So in this problem we will first find all the rotten oranges and push 
+them into the queue, also during this operation we will store the count of the fresh oranges so as to check in the last that is all oranges becomes 
+rotten or not. Now as on first pass we push all the rotten oranges into the queue, so we will now start to traverse the queue and pop out all the 
+oranges from their and than insert all their neighbour fresh oranges in the queue. As the fresh orange changes to rotten we will decrease the count 
+of fresh oranges and on each pass to the queue we will increase time by one. Also on each step of change of the orange from fresh to rotten we will 
+make them rotten so that we will visit them again. At the end when queue becomes empty we will check that is all the oranges becomes rotten or not, 
+if they were than we will return the value of the time else return -1 showing that it is impossible to make all fresh oranges to rotten oranges.
