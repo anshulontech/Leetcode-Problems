@@ -1,0 +1,12 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this problem we are using an array of size 26 initialize with -1 and the index i represents that how many time we need to increase a character by 
+i times. For example index 1 with value 3 represents that we need to increase 3 characters by 1 unit to make string s equal to t. Now as we will 
+start to traverse the string we will first store the number of moves we need to change s[i] into t[i]. After getting the number of move we will 
+first increase the count of the index difference and than check that is the max move formed cannot exceed given limit.For example for index i=1 with 
+value 3 represents that we need moves 26*0+1,26*1+1,26*2+1 because we can use a move only ones so to use it again we need to add 26 to it. So to 
+check this we will just check the last one that is this crosses the limit or not, If it is than we can't make s to i with given minimum move so we 
+will return false in that condition else if we traverse the whole string without crossing the limit than we can return true.
