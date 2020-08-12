@@ -1,0 +1,9 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(H).
+
+In this appraoch what we are going to do is that we will traverse the tree with taking a variable to count the current depth. If the current node is 
+a leaf node and the depth of the current node is found be greater than the previousely occuring node than we will set the max depth as the current 
+node and start the sum of the max node from this node. But if the current depth is found to be equal to the max depth than we will add the value of 
+the node to the already existing sum and store that one as result. After traversing the whole tree we can get the sum of the deepest nodes.
