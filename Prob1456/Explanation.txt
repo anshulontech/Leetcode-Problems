@@ -1,0 +1,21 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this approach we are going to use the concept of sliding window in which we are maintaing a window of length k and also taking count of the 
+number of vowels in this window. Now we are going to shift this window forward with maintaing it's length constant and if the next element inserted 
+to the window is a vowel than we will increase the count of the number of vowels as this will get inserted in the new window and if the last element 
+is also a vowel than as we will remove it from the window on moving forward, so we have to decrease the count of vowels as we will remove this 
+element. On each shift of the window forward we will check the max value of the number of vowels and store the max in a result variable which we 
+will return in last as the final answer.
+
+In this approach we are using a map to check that is the current element is a vowel or not suh that the time time Complexity becomes O(1).
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this we are using a vector to check that is the current element is a vowel or not. This is faster than the above approach as the map works using 
+concept of linked list so it is not accurately O(1) but this approach is definately O(1), so it becomes little bit faster.
