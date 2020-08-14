@@ -1,0 +1,13 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this problem we are going to use two pointers approach according to which one pointer points to start point and the other one represents the end 
+points. Now we will start to find the first vowel from the start and the end and than swap both of them after this we will find the next vowels and 
+swap them and do this process untill start pointer becomes greater than end pointer. As in this appraoch we are doing all operations on given string 
+and we are not using any extra space so the space Complexity is O(1) and we are traversing the string only ones results into time Complexity equal 
+to O(N).
+
+Note as we are using extra space in checking that is the character is vowel or not does not changes space Complexity as it is fixed for all the test 
+cases.
