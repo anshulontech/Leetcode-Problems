@@ -1,0 +1,43 @@
+Approach 1:-
+
+In this approach we are building our own linked list node with name myNode which has two variables in it. The first one is an integer type which is 
+used to store the value of the node while the other one is pointer to myNode used to store the address of the next node in the list.
+
+get(int index) Function:-
+    Time Complexity:-O(index).
+    Space Complexity:-O(1).
+
+In this function we will check that if the index is valid than we will move to that index in the list in O(index) time and return the value of that 
+node. If the index is not valid than we will return -1.
+
+addAtHead(int val) Function:-
+
+    Time Complexity:-O(1).
+    Space Complexity:-O(1).
+
+Making a new node with value equal to val and than the next pointer of the new node now points to te head of the list and the root node that is 
+global head of the list now points to the new node.
+
+addAtTail(int val) Function:-
+
+    Time Complexity:-O(N).
+    Space Complexity:-O(1).
+
+By traversing we will reach the end node of the list and than insert a new node at the end with value equal to val.
+
+addAtIndex(int index ,int val) Function:-
+
+    Time Complexity:-O(index).
+    Space Complexity:-O(1).
+
+By traversing we will reach the index -1 node of the list and than making a new node their and the next pointer of index-1 node points to the new 
+node and the next pointer of the new node points to the previous index node and hence by doing this we can insert a node at given index.
+
+deleteAtIndex(int index)
+
+    Time Complexity:-O(index).
+    Space Complexity:-O(1).
+
+By traversing the list we will reach the index -1 node of the list and than the next pointer of the index -1 node points to next pointer of index 
+node, so by doing this now the next pointer of index -1 node points to index +1 node and hence the index node is skipped and hence we can say that 
+this node is deleted from the list.
