@@ -1,0 +1,38 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+On observing carefully it was found that the max amount of moves required to make n elememt string is equal to n. As for n= 2 we will copy on 1s 
+step and on second step paste one A so it becomes AA and steps become 2, for n=3 we will paste one more A for 2A's string and hence steps become 3 
+and so on for all the combinations. So n is found to be the max number of moves to make n elememts string.
+
+Now in this problem we are using dynamic programming to solve this problem. In this we are using the help of previous values to calculate the 
+current values.Here we will calculate first for n=2 than for 3,4,5,6 and so on till n. So to calculate for let index m we are using all the previous 
+values and hence their is a need to use dp array. 
+
+Now as we know that the for n the maximum number of moves required is equal to n, but on obsevation it is found that to calculate the minimum number 
+of moves for n what we have to do is to find the just samllest number which divides n completely and use that one to generate the reuslt. Like for 
+n=9 the helper number is turned out to be 3 for n=15 it is 5, for n=39 it is 13 and so on. Now after getting this helper number let it be i and the 
+current number be n the number of moves required to copy i length string and make it equal to n length string is n/i. As in this we have to copy the 
+string in 1st step and than in next n/i -1 steps we have to paste them so that we can generate n length strings. So for the given i length string we 
+can generate n length string in n/i-1 ways but we have to generate it from 1 length string so the number of steps to calculate i length string is dp
+[i] as we caculated already hence by this we are using dp array to calculate the result. 
+
+So for calculating n first we have to calculate for n=1 than 3 ,4,5 and so on till n. And at last dp[n] shows the required result.
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+
+Approach is same as that of above one but here we are using static array/vector so that we don't have to caluclate the already calculated results.
+
+Approach 3:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this we are doing is that we will first find the helper number of n and do the same process as that of above that the result will be n/i+dp[i]. 
+But here we are not using dp array instead we will again use the minSteps function with argument n=i as recurssion to calculate the steps required.
