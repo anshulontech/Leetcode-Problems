@@ -1,0 +1,13 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+According to the question there are only two types of characters present in the system that is first character ('0') and second character('10','11').
+Now when we are start to traverse the given array represented by several bits, if the present character becomes equal to 1 than it represents that 
+the character formed using this bit is of second type and hence we can shift our pointer two steps forward as the length of second character is 2. 
+But if the present character is 0 than it is of first type and hence we can shift our pointer only 1 step forward. So by doing this we can traverse 
+the whole array. Now by travseing if the pointer reaches the N-1 index of array directly that is it doesnt't skip this index than we can say the the 
+last character is of type first and hence we will return true. But if the pointer reaches the N-2 index and the bit found their is 1 than in that 
+situation the pointer shifts two steps forward and hence the pointer reaches end of the array by skipping the N-1 index.So in that situation the 
+last characteris of type second and hence we will return false.
