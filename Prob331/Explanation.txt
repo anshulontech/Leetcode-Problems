@@ -1,0 +1,12 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).  For recurssion stack.
+
+In this appproach what we are going to do is that we are going to itterate the tree as preorder traversal without building the tree again. So as 
+same as preorder traversal we will first traverse the left subtree and than right subtree. On encounter with the null node that is "#" in this case 
+we will return from there. Now as we are traversing if the whole tree is traversed completely that is both left and right subtree are traversed for 
+each node and all the nodes in the list are traversed than in that situation we can say that this is the verified Preorder Serialization of a Binary 
+Tree. But if some nodes left and right subtree are not traversed just because the nodes in the list got finished or after travesing the whole tree 
+some nodes remains in the list which are not part of the tree than in that situation we can say that it is not Preorder Serialization of a Binary 
+Tree and hence we can return false.
