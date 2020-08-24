@@ -1,0 +1,14 @@
+Link To Problem:-
+https://leetcode.com/problems/sum-of-left-leaves/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(H). H is height of binary tree and is for recurssion stack.
+
+In this approach what we are going to do is that we will do the as usual preorder traversal of the tree with some modification that here we are also 
+taking a second variable named isLeft which will tell us that the current node is a left node of it's parent node or not. So when we call traversal 
+function for left subtree than we will pass true value for the left subtree and false for the right subtree. Now if the current node is found to be 
+left node and is also a leaf node than we will add it's value to the result variable and return from there else if the current node is not a leaf 
+node than we will again call the traversal function for left and right subtree with true and false as arguments for isLeaf variable respectively. 
+After traversing the whole tree we are with the sum of the left leaf nodes in our result variable.
