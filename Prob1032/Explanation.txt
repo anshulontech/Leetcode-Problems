@@ -1,0 +1,29 @@
+Link To Problem:-
+https://leetcode.com/problems/stream-of-characters/description/
+
+Approach 1:-
+
+In this we are using trie data structure to store the string so that the time complexity to search any suffix substring of queries reduces to 
+O(N) insetead of O(N^2).
+
+Function StreamChecker(vector<string>& words):-
+
+Time Complexity:-O(N*M). where N is length of words and M is avg length of all the strings.
+Space Complexity:-O(N*M).
+
+In this we are trying to store the string in reverse order in a trie data structure. You can assume that here we can first reverse the string and 
+than insert it into the trie data structure as we do always. But to minimise the time we will insert the string from the back in the trie and hence 
+it gets inserted in reverse order. Now why we are doing like this. This is because as the question said that we have to find the suffix of the 
+string made by queries in the list. So if we are storing the string in trie in given order than to search suffix first we have to check for length 1 
+than 2 than 3 and so on, which makes it's time complexityO(N^2). But if we are searching from back than the time complexity becomes only O(N). As we 
+have to search for length 1 than 2 than 3 and in this case what we can do is that we can continue our search from the last poisition where we left 
+the last one. So by this we can store the string in the trie.
+
+Function query(char letter):-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this function first we will update the query string by adding the given character to the last of the string. No we will start to find the string 
+from the back which is present in trie. If we found the string than we can return true else search for next character untill reaches the end of the 
+string or the trie Node.
