@@ -1,0 +1,22 @@
+Link To Problem:-
+https://leetcode.com/problems/flatten-nested-list-iterator/description/
+
+Time Complexity:-O(N*l). N-> Number of elements in the vector and l is avgerage length of each list.
+Space Complexity:-O(N*l).
+
+In this we are using a stack to store the integers. So basically in this we are storing all the values in the reverse order in the stack as the s
+tack follows last one first out approach and in output we want the integers in the given order so in this we are storing integers in reverse order.
+
+Now on storing the integers we are storing them s the given input that is if they are integer or list of integer, so that we can reduce space 
+complexity to some extent.
+
+Function HasNext:-
+
+In this if the stack is empty that is no more elements are present in the list than we will return false else if the top element of the stack is a 
+list than we will first insert all the element in the stack in integer form untill and unless the top element of the stack becomes an interger and 
+after doing this we will return true.
+
+function next() :-
+
+As the hasNext function runs before the next function hence the top value of the stack is an interger hence we ca return that value easily and pop 
+it out from the stack.
