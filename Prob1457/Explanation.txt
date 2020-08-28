@@ -1,0 +1,21 @@
+Link to the Problem:-
+https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N). Some amount of constant space is required but O(N) is due to recurssion stack.
+
+
+As we know that for making the pallindrome if we have some numbers and only one or no number in the given set occurs odd times than we can say that 
+we can form pallindrome else we can not. So in problem what we are going to do is that we will store the count of each number occurs in the root to 
+leaf node and than check that how many numbers occurs odd number of times. If the count of the odd numbers turned out to be less than 2 than we can 
+say that we can form pallindrome else we can not. So to store the count of each number we are using an array of sie 9 as the nodes value can vary 
+from 1-9, and on encounter with each node we will check the numbers with odd count.But wait it will become more complex for time if we will check 
+the number of odd count each time on encounter with leaf node, so to minimise the time what we are going to do is that we are taking odd and even 
+variables with us which stores the count of numbers occur odd number of times and count of numbers occur even number of times respectively. So on 
+encounter with leaf node we can easily check the number of odd count without going through the array.
+
+Approach 2:- 
+
+Same as that of above one. But Here we are not going to use the even variable as their is no need to use it.

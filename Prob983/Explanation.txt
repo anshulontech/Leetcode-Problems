@@ -1,0 +1,15 @@
+Link To Problem :-
+https://leetcode.com/problems/minimum-cost-for-tickets/description/
+
+Approach 1:-
+
+Time Compexity:-O(N). Where N is the last day of travelling.
+Space Compexity:-O(N).
+
+As this is a minimum cost problem and from the description we can interpretate that it is a dynamic programming problem hence in this question we 
+are going to use dynamic programming. Now as we are using dp in this so we need dp table. Now as the costs size if fixed so that we can use a dp 
+array to solve the problem. Now this dp array is used to store the minimum cost till current index. So for this the zero index stores value as the 0 
+as their is no cost for no travel. Now if the current day is not in the list than in that situation we can simply assign the previous day's cost to 
+it as their is no cost of travelling for that day. But if the current day is in the travelling list than we will check that what should be the 
+minimum cost if he will travel current day with one day pass or last seven days with 7 days pass or last 30 days with 30 days pass. The minimum 
+value from these will get assign to the current day. And hence by doing this we can get the minimum cost to travel along the given list of days.
