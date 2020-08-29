@@ -1,0 +1,24 @@
+Link To Problem:-
+https://leetcode.com/problems/target-sum/description/
+
+Approach 1:-
+
+Time Complexity:-O(2^N).
+Space Complexity:-O(2^N). For recurssion stack.
+
+This approach is like modified brute force approach.
+In this what we are going to do is that initially we will get the sum of all the elements in the list. Now let us assume we have total sum of 5 and 
+the target sum 3, so what we have to do is that we have to substract the element whose sum is 1 twice from the total sum. This is because what we 
+have to do is to insert -sign before that number. Now during taking total sum we have included that number ones. Now to get the target sum what we 
+have to do is to first remove or substract that number from the total sum to get new sum and than substract that number from the new sum so that we 
+can get desired target sum. So during sustracting target sum from total sum we have substracted the negative element's sum twice hence to find the 
+negative elements sum we have to half the difference of total sum and target sum, and hence by doing this we can get the negative elements sum. Now 
+we can use helper function(see Code) to calculate the number of sets having sum equal to negative elements sum and than we can return the result 
+gained from their.
+
+Approach 2:-
+
+Time Complexity:-O(N*S). N is nums.size() && S is sum of positive terms.
+Space Complexity:-O(S)
+
+Same as that of above one but here what we are going to do is that we will use to calculate the sum of the positive terms and than going to find the number of subsets with the obtained sum. In the previous solution to obtain number of subsets we use recurssion due to which time goes exponential so to minimise the required time we are going to use dynamic programming due to which time becomes O(n*s).
