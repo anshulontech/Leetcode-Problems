@@ -1,0 +1,12 @@
+Link To Problem:-
+https://leetcode.com/problems/shortest-palindrome/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+As by observation it is found that on reversing the string and adding it to the front part makes it a palindrome. But this is not the shortest 
+palindrome as we want. But on observation the part which occurs extra one in the resultant string is found to the longest prefix which is also 
+suffix of the string s + reverse(s). So we will use KMP table to found the length of the suffix which is also a prefix. After getting this we will 
+remove that part of the string and join the rest of the string to the beginning of the string, and hence we are with our result.
