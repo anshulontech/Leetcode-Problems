@@ -1,0 +1,15 @@
+Link To Problem:-
+https://leetcode.com/problems/pancake-sorting/description/
+
+Approach 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N). 
+
+As the given array is a permutation of all the number between 1 and arr.size(), so here what we are going to do is that we will find the largest 
+element in the unsorted part and than set it to it's right position. Now what we are going to do is that we can set the largest element in unsorted 
+part by the following operation. So we will first find the index where it is present in the unsorted array let be i. After finding the index we can 
+reverse the first i elements , so by doing this what is happening is that the largets element goes to the first place or 0th index of the array. Now 
+we can reverse the first arr[0] elements so the that element present at index i before performing above operations goes to it's right position. Now 
+we can do the same set of operations with length n-1 , where n is length of previous unsorted array. During reversing of the elements of the array 
+we will store the number of elements reversed in an another array to the result. And finally can return that one.
