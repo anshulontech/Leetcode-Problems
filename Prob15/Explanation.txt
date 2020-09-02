@@ -1,0 +1,23 @@
+Link To Problem:-
+https://leetcode.com/problems/3sum/description/
+
+Approach 1:- Brute Force.  [Time Limit Exceed]
+
+Time Complexity:-O(N^3).
+Space Complxity:-O(1). Extra space required other than result array is constant.
+
+As the time Complexity suggest that here we will check all the triplets having sum equal to 0. Point to note is that for ignoring same occurence of 
+the triplets what we are going to do is that let say the first element is at index i, 2nd at j and 3rd at k , so now we will move k untill it has 
+same value as previous one than do the same for j and i respectively. So by doing this we can neglect the same triplets to occur again in the result.
+
+Approach 2:- 
+
+Time Complexity:-O(N^2).
+Space Complxity:-O(1). Extra space required other than result array is constant.
+
+Now in this Approach what we are going to do is that we will itterate the given array ones for each index that is why time Complexity becomes O(N^2).
+Now let us assume that we are at index i than initially the triple is formed with index i ,i+1(start) and N-1(end). So now we can calculate the 
+current sum. If the current sum is found to be greater than 0 than it represents that the positive content is found to more so we have to decrease 
+it hence we have to decrease the positive part by decrementing the end pointer , else if the sum is found to be less than 0 than it represents that 
+negative part is more hence we have to decrease the negative part by incrementing the start pointer. If the sum becomes zero than we will store the 
+result with us and do the above Approach specified method to neglect the same triplets.
