@@ -1,0 +1,9 @@
+Link To Problem:-
+https://leetcode.com/problems/prime-palindrome/description/
+
+Approach 1:-
+
+In this approach what we are going to do is that we will try to generate all the pallindromes starting from the 1 and check that is these are primes 
+or not. If these are found to be prime and are greater than or equa to the given N than we can return this number else check for the next. The 
+important point to note here is that if the number is a even pallindrome other than 11 than it can't be a prime number hence we will not check for 
+the even pallindromes and will check only for the odd pallindromes.
