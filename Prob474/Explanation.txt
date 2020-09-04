@@ -1,0 +1,14 @@
+Link To Problem:-
+https://leetcode.com/problems/ones-and-zeroes/description/
+
+Approach 1:-
+
+Time Complexity:-O(L*M*N).
+Space Complexity:-O(N*M).
+
+As this problem is something similar to 0/1 Knapsack Problem. So to solve this Problem we are going to use Dynamic Programming. In this problem we 
+are using a 2D dp array which is used to tell us that when the minimum number of zeroes and ones are i and j than the result for the given set of 
+string of (i,j) set is equal to dp[i][j]. Here ones represents the numebr of 1 and zeros to number of 0 for the string which we are traversing .Now 
+in this what we are going to do is that for each string we will traverse the whole dp matrix and for each i,j we will check that if can use this 
+string than for set (i,j) than we will check at index (i-ones,j-zeroes) that if we will use it here than for the set of (i,j) the previous set 
+returns higher or the current set. And upadte the answer at (i,j) to the max one.
