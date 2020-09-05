@@ -1,0 +1,21 @@
+Link To Problem:-
+https://leetcode.com/problems/recover-binary-search-tree/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+As we know that the BST has a special property for inorder traversal that is it's inorder traversal will give us the sorted array when storing the 
+node's value. So in this approach what we are going to do is that we will go for the inorder traversal of the tree and store the nodes in an array. 
+Now we will traverse the array and note the position where there is some irregularity in the trend of the array. After noting these position we can 
+just swap the nodes at these positions and hence will get the correct binary search tree.
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(H). Where H is the max-height of the tree. This is just for the recurssion.
+
+This Approach is also same as that of the above one but here we are not storing the values of the node else here what we are going to do is that we 
+will just store the nodes in other variable which shows irregularity during traversal. And after this we will swap there value to get correct binary 
+search tree.
