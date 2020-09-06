@@ -1,0 +1,26 @@
+Link To Problem:-
+https://leetcode.com/problems/all-elements-in-two-binary-search-trees/description/
+
+Approach 1:-
+
+Time Complexity:-O((N+M)*log(N+M)).
+Space Complexity:-O(N+M).
+
+In this approach what we are going to do is that we will store all node's value of both trees in a single array and than sort the array to get the 
+sorted array.And after this return the sorted array.
+
+Approach 2:-
+
+Time Complexity:-O(N+M).
+Space Complexity:-O(N+M).
+
+As we know that inorder traversal of the BST gives the sorted array so we will store in order traversal of both the trees and than use merge sort 
+logic to merge these array to get sorted array and after this we will return the sorted array.
+
+Approach 3:-
+
+Time Complexity:-O(N+M).
+Space Complexity:-O(N+M).
+
+In this we are doing the inorder traversal using itteration of both the trees simultaneously but here we are doing the merging of the array during 
+traversal so that we can save our time.
