@@ -1,0 +1,10 @@
+Link To Problem:-
+https://leetcode.com/problems/triangle/description/
+
+Approach 1:-  (Time Limit Exceeded)
+
+Time Complexity:-O(2^N).
+Space Complexity:-O(2^N).
+
+In this approach what we are going to do is that we will try all the possible combinations and than extract out the sum which has minimum value.This 
+approach can be termed as Brute Force as we are generating all the possible combinations and search all of them.
