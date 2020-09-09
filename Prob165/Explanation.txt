@@ -1,0 +1,14 @@
+Link To Problem:-
+https://leetcode.com/problems/compare-version-numbers/description/
+
+Approch 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+So in this Problem what we are going to do is that we will itterate both the strings simultaneously and than extract the first number formed from 
+there and compare them. If anyone is greater than we will return the value according to given conditions in the question. But if both have same 
+value than we will check for the next version of number and compare them and so on till anyone string does not terminates or any version becomes 
+greater than other. If any one of the string terminates first than we will check that is any further version of number formed with the other string 
+is 0 or not. If it is not zero than it implies that both versions are not equal and hence will return value according to it. But if all further 
+versons are 0 than we will return 0 as both versions are equal.
