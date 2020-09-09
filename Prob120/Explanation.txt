@@ -8,3 +8,15 @@ Space Complexity:-O(2^N).
 
 In this approach what we are going to do is that we will try all the possible combinations and than extract out the sum which has minimum value.This 
 approach can be termed as Brute Force as we are generating all the possible combinations and search all of them.
+
+Approach 2:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N).
+
+So on observing the previous approach it was found that wht we are doing is that for each element in the row we are calculating the minimum sum 
+present below it. And we are doing this for each time when we encounter with that element. So to solve this problem what we are going to do is that 
+for each element we will store the minimum below sum and hence we have to visit whole set of elements ones. Now here we are doing same that is we 
+will store the minimum value of all the elements in another array and use this one to generate the answer. Upon observation it found that when we 
+are going from top to bottom than we only require only the next rows elements and hence here we will follow bottom up approach and store the minimum 
+value at respective index and hence on traversing all the elements we have our answer on 0 index.
