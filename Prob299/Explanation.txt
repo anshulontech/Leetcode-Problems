@@ -1,0 +1,22 @@
+Link To Problem:-
+https://leetcode.com/problems/bulls-and-cows/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+So in this prolem we are going two pass solution and a map to store the count of digits. In the first pass of the solution we will calculate total 
+number of elements of all the digits from 0-9 (Both Inclusive) in a map. Here if any pair is forming a Bulls pair than in that situation we will 
+just count the number of such pairs and not count their number in the number of digits count and they we will not form the Cows pair anymore. Now we 
+will itterate the guess string and their we will check that if the current elements will not form a bulls pair and the same elements should be their 
+in the secreat string at other position, if it is than this element can form a cows pair and hence we will increase cows count and decrease the 
+count of that element from map as this will not further not used to make cows pair with anyother digit. At last we have number of cows and bulls 
+pair so we can retunr the answer as given form.
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Same as that of above one but here we are using an array of size 10 instead of map to reduce some time as map is not completely O(1) while array is.
