@@ -1,0 +1,8 @@
+Link To Problem:-
+https://leetcode.com/problems/combination-sum-iii/description/
+
+Approach 1:-
+
+In this problem we trying to generate all the possible combinations of size k and sum n. We are using backtracking approach to generate all the 
+possible outcomes. To avoid time for calculating the sum from array all the time when size reaches limit we are taking a variable currSum which 
+stores the some of elements in the array.
