@@ -1,0 +1,11 @@
+Link To Problem:-
+https://leetcode.com/problems/add-strings/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this approach what we are doing is like summing up the integers as we did in our juniour class that is first add the last digit of both string 
+and store the result and take our carry from there, after this we go from last to first element by doing the basic process. Finally we have result 
+in another string and we can return that one.
