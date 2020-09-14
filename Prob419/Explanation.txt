@@ -1,0 +1,19 @@
+Link To Probelm:-
+https://leetcode.com/problems/battleships-in-a-board/description/
+
+Approach 1:-
+
+Time Complexity:-O(N*M).
+Space Complexity:-O(1).
+
+As we know that we have a lot of solutions to easily solve this problem, but it was clearly mentioned in the question that "Could you do it in 
+one-pass, using only O(1) extra memory and without modifying the value of the board?". So we are solving this question according to the given 
+constraints. 
+
+On observing it was found that if we encounter with a 'X' character and if it has no 'X' character to it's left and top and it shows that it is the 
+beginning of the new battelship and hence we have a new battelship to count. But if the current 'X' character has another 'X' character to it's left 
+or top than it represents that it is part of another battelship which is counted earlier hence we are not counting this one and go for the next to 
+check.
+
+So we are itterating the given board ones and are not using extra memory to solve the problem and also not modifying the value of the board , hence 
+we follow all the given constraints.
