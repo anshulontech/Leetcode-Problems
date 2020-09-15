@@ -1,0 +1,10 @@
+Link To Problem:-
+https://leetcode.com/problems/length-of-last-word/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+    
+First we will reach at that point from last which is not a white space and after this we will find the first white space character to the left of it 
+and calculate the length from there and return that one.
