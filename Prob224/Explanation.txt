@@ -1,0 +1,35 @@
+Link To Problem:-
+https://leetcode.com/problems/basic-calculator/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Few terms to introduce are:-
+
+1) res-> Final Result.
+2) num-> The current number formed on which we are working that is 2 or 5 or 35 or 1412 etc.
+3) sign-> The sign of number on which we are working.
+4) store-> This is a stack used to store the results in parenthesis.
+
+In this problem depanding upon the following conditions we are taking the steps as discussed. 
+
+1) If the current character is a digit :-
+    Now in this situation we will add the current character to the num by adding it to ones place and shifting other digit 1 step to left that is 
+    multiplying it with 10 and than adding the current digit.
+
+2) If current character is either + or - :-
+    So in this situation we have done all with the previous number except adding it to result. So on facing this situation we will add the number to 
+    the final result with it's corresponding sign and than starting with a new number as 0 and sign according to + or -.
+
+3) If current character is '(' :-
+    This implies the beginnning of a new string. So we will just push the previous string result in a stack and than start from beginning to 
+    calculate the result for the current or new imaginary string. After done all with this string that is on encounter with corresponding colsing 
+    parenthesis ')' we have done with this string so add that to the result and continue the to original string.
+
+4) If the current character is ')' :-
+    It implies the end of the current or imaginary string so we will add the result of that string to the original result and continue for the 
+    further string.
+
+At last we will return res as the final answer.
