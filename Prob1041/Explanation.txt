@@ -1,0 +1,14 @@
+Link To Problem:-
+https://leetcode.com/problems/robot-bounded-in-circle/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+In this approach we are using a vector of size 4 which is used to store the number of steps along various directions. Here index 0 for North, 1 for 
+east, 2 for South, and 3 for West. Now initially we are facing towards north, so out direction index should be 0. Now we will start to traverse the 
+string, if the current character is G than we will increase one step towards current direction, But if current character is other than G than we 
+will change the direction according to it. Also we will take count of the total steps we have taken. Now if the total steps taken are 0 or after 
+traversing the string we are not facing towards north or if we return to our initial position facing in any direction than we can say that robot 
+never leaves the circle. So if any of the 3 condition become true than we will return true else return false. 
