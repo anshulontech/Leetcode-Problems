@@ -1,3 +1,6 @@
+Link To Problem:-
+https://leetcode.com/problems/arithmetic-slices/description/
+
 Approach1:-
 
 Time Complexity:-O(N).
