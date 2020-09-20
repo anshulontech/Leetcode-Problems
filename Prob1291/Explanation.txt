@@ -1,0 +1,14 @@
+Link To Problem :-
+https://leetcode.com/problems/sequential-digits/description/
+
+Approach 1:-
+
+Time Complexity:-O(N). Where N is the difference of length of high number and low number.
+Space Complexity:-O(1).
+
+In this Approach min_len represents the min length required for digits and max_len represents max length required for digits. Also we have a digits 
+string which store all digits in sequential order. Now initially we are taking current length equal to min_len and starting digit to 1 so we form a 
+number of length min_len starting from 1. Now we will check that is that number is greater than low and smaller than high or not. If it is than we 
+will add that to list and check for number of current length as min_len and starting with 2 and check for this one and so on. Now when we are done 
+with all number of length min_len than we will go for length min_len+1 and check the same for that one and so on. After done all with these we have 
+answer in a arr so we can return that one as final answer.
