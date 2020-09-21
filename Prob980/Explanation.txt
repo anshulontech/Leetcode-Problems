@@ -1,0 +1,10 @@
+Link To Problem:-
+https://leetcode.com/problems/unique-paths-iii/description/
+
+Approach 1:-
+
+In this approach we are initially taking the total count of the non Obstacle elements and than than we will start from the stating position in all 4 
+directions, if the elements in any of the directions is a obstacle(-1) or already visited one(denoted by -2 in the code) than we will non go to that 
+place and return from their. Now as traversing we are also taking count of the current non-obstacle elements, now on traversing if we will reach the 
+end position(2) than we will check that is the current non obstacles are equal to total non-obstacles, if it is than it is a valid path and hence we 
+will increase the result counter and return from their. So by doing this we can traverse the whole area and caluclate the valid number of paths.
