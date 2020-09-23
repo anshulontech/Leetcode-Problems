@@ -1,0 +1,16 @@
+Link To Problem:-
+https://leetcode.com/problems/gas-station/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+According to the question we can say that if we are at index i than the cost to move to i+1 index is equal to gas[i]-cost[i]. So in this we are only 
+conserned only with this. Here cost at index denotes gas[i]-cost[i].  So now we will start to itterate the gas array. As we are itterating we will 
+store the total cost used , if the total cost is found to be less than 0 than we can't move to the stations and hence we will return -1, but if it 
+is not than at each pass of station we will add the cost of index i to current cost, if the current cost is found to be less than zero than it shows 
+that we can not start from anywhere from back index or current index, so let start from i+1 index and with current cost equal to 0. Now we will 
+calculate the current cost from i+1 index, If at any further index j it again becomes less than 0 than we will again start from j+1 index. Now if 
+the solution exist than the first index after which current cost will not become zero is the answer as it was clearly mentioned that their is only 
+unique solution to the question hence we are free to do so.
