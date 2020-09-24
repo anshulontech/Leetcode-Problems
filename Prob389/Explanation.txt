@@ -1,0 +1,21 @@
+Link To Problem:-
+https://leetcode.com/problems/find-the-difference/description/
+
+Approach 1:-
+
+Time Complexity:-O(N+M)
+Space Complexity:-O(N).
+
+In this approach we are using an unordered map to store the letters and their count in given string s. Now we will start to itterate the second 
+string, now if any character arrises which is not present in map than we can say that this is the new added character or if count of any character 
+in t is found to be greater than count in s than we can say that this is the new added character and return that one as final answer.
+
+Approach 2:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+As we know that string t is formed from shuffling characters of string s hence we can say that the each character of string s occurs even number of 
+times in combined string of s and t. Also we know that XOR of same operands result to 1 so in this we will try to take XOR of all the characters. 
+The result of this XOR gives the newely character added as all the previous occuring characters occurs even times and hence thier XOR results into 1 
+and XOR of 1 and any character results into that character and hence we can say the the result stores the new added character. 
