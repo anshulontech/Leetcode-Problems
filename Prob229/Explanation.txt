@@ -1,0 +1,10 @@
+Link To Problem:-
+https://leetcode.com/problems/majority-element-ii/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this approach we are using an unordered map to store the count of each number and after doing this we will start to itterate the map and from 
+their we will store all the elements having count more than n/3 in an array.
