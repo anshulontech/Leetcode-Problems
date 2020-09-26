@@ -1,0 +1,12 @@
+Link To Problem:-
+https://leetcode.com/problems/implement-magic-dictionary/description/
+
+Approach 1:-
+
+In this approach we are using a trie data structure to take help for searching the given word. Storing words in trie is done without any change to 
+what we did in earlier questions. Now all the game runs around how to search element. In this what we are going to do is that we will first change 
+the first element and than search that the rest string of word is present or not, if it is than we will return true else if it is not than we will 
+try to change for the second letter and check for the rest of string keeping first same as given and so on, if at any step by changing exactly one 
+letter we generate a word of the dictionary than in that we will return true, but if we are unable to do so than we will return false. Now we can 
+think that changing every word 25 times requires a lot of time so it will be a bad approach but here we are using trie data structure due to which 
+the time reduces and it results into a good approach.
