@@ -1,0 +1,19 @@
+Link To Problem:-
+https://leetcode.com/problems/teemo-attacking/description/
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+On observation it was found that if the difference between time of any two successive interval is less than duration that in that case total duration
+is not considered else the time difference is considered. So in that case we will count that time in our answer, but if the duration is found to be 
+less than in that case we will count the duration as time of attack. So in this what we have seen is that between any two successive time difference 
+the time of injury considered is equal to minimum of the duration and their difference so we will count that one for our answer. So in this problem 
+we will reun a loop over the array and than count the min of duration and difference in our answer and return that one as final answer.
+
+Now why this happening is a big question. This is because if we are considering the previous attack, and the next attack will occur after time 
+greater than or equal to duration than in that stuation the effect of attack will remain active for time interval equal to duration so in that case 
+the time added to answer will be equal to duration(min of difference and duration is duration so it is added). Now on other situation if the current 
+attack occured before completion of duration for previous attack than in that situation the impact of previous attack remains active only for 
+difference duration and after that time interval time count of new attack will started from zero, so in that situation we will add the difference 
+duration to result(min of difference and duration is difference so it is added). So by this we can say that we will add the minimum of difference 
+and duration to final result.
