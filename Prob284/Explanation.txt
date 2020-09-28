@@ -1,3 +1,6 @@
+Link To Problem :-
+https://leetcode.com/problems/peeking-iterator/description/
+
 Approach 1 :- (No iterator class is used.)
 
 Time Complexity:-O(N). 
