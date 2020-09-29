@@ -1,0 +1,12 @@
+Link To Problem:-
+https://leetcode.com/problems/word-break/description/
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N+M).
+
+In this we are using an unordered set to store the words of dict because we are going to match the substring from these words and hence it will be 
+helpful if we are going to use set so that we can reduce the time complexity for searching. 
+
+Now In this problem we are going to use dynamic programming approach in which we are going to divide the problem into sub-problems. Also we are 
+using an array whose indices tell us that is the substring of length current index from index 0 can be formed from the given words in dict. So by 
+this we are going to divide problem into sub problems. At last the value at index n of the dp array will tell us the result.
