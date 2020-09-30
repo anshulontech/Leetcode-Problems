@@ -1,3 +1,6 @@
+Link To Problem:-
+https://leetcode.com/problems/nim-game/description/
+
 Approach 1 :- (dp Approach).
 
 Time Complexity:-O(N).
