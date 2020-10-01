@@ -1,0 +1,12 @@
+Link To Problem:-
+https://leetcode.com/problems/number-of-recent-calls/description/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this problem we are using a queue which store all the recent calls under 3000 seconds. Now on encounter with a new call we will first remove all 
+the calls which occured 3000 seconds before that call that is we will remove all the calls whose difference of time is greater than 3000. So after 
+removing these calls we have all the calls which occured within a time of 3000 seconds so the size of the queue represents the recent calls within 
+3000 seconds and we will return that one as final answer.
