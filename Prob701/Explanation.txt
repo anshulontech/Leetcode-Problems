@@ -1,0 +1,13 @@
+Link To Problem:-
+https://leetcode.com/problems/insert-into-a-binary-search-tree/description/
+
+Approach 1:-
+
+Time Complexity:-O(H). Where H is the height of the binary tree.
+Space Complexity:-O(H).
+
+So what we can do in this problem is that we can add the new node as a leaf node to the given binary tree so that it will become easier for us to 
+solve the problem. So in this problem first we will find that node whose left or right is NULL and a new node can be formed in that place without 
+any problem so that the tree remains binary search tree. Now we will also use the property of BST that left elements are samller and right elements 
+are greater, so if the new node to insert has value greater than current node than we will search for the right subtree else go for the left subtree,
+so that we can save change time complexity from O(N)->O(H).
