@@ -1,0 +1,13 @@
+Link To Problem:-
+https://leetcode.com/problems/binary-search/description/
+
+Approach 1:-
+
+Time Complexity:-O(log(N)).
+Space Complexity:-O(1). 
+
+We are using the simple binary search logic that is if in a sorted array the target element is found to be present greater than the middle element 
+of the given array than in that case the target element is their in the right mid half of the array and hence we will search with the same algorithm 
+over their else we will search for the left half, if the mid element becomes equal to target than we will return the index else if the sub array in 
+which we have to find the becomes empty that is no element is present in the array than it represents that this element is not in the list and hence 
+we will return -1 in that case.
