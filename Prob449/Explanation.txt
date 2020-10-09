@@ -1,0 +1,10 @@
+Link To Problem:-
+https://leetcode.com/problems/serialize-and-deserialize-bst/
+
+Approach 1:-
+
+To serialize it we will store the preorder traversal of the binary tree in a string with each node's val is seperated with ',' so that during 
+deserialization we can differenciate each node from other.
+
+To deserialize the string into tree we will first store the nodes val into a queue so that it will become easy for us to get the next node from the 
+store. After this we will simply build the tree with reverse preorder traversal method and return the head node.
