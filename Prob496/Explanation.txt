@@ -1,4 +1,7 @@
-Symbols Used:-
+Link To Problem:-
+https://leetcode.com/problems/next-greater-element-i/description/
+
+Notations Used:-
 N=nums2.size(),M=nums1.size();
 
 Approach 1:-
