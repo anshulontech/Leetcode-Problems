@@ -1,0 +1,16 @@
+Link To Problem:-
+https://leetcode.com/problems/buddy-strings/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N). 
+
+In this problem what we are going to do is that we will store all the index whose characters are not same, now as we have to do exactly 1 swap so if 
+there are 2 positions where elements are different and after swaping they will make both the strings equal than we will return true else if both the 
+strings are already same but have some characters which occured at least twice than also in that case we can say that if we wll swap these same 
+characters than this will generate no effect on the strings and hence we can make them equal with 1 swap. So this the main logic behind this problem.
+Now to store the index where string are not same we will use a vector and store the index in this vector, if the size of vector is not 0 or 2 than 
+we can return false else if the size is 2 than we will check that is after swaping can we make them equal or not, also if the size is 0 than we will 
+check that is any character appears at least twice or not and to check this we will use a map to store the count of each character. At the end by 
+considering all these factors we will return the suitable answer reflected from these observations.
