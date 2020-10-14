@@ -1,3 +1,6 @@
+Link To Probelm:-
+https://leetcode.com/problems/global-and-local-inversions/description/
+
 As by the careful observation it is found that all the local inversions are subset of global inversions. So if we will found any global inversion 
 which is not a global inversion than we can return false as the count of global inversion becomes greater than local inversion. else if we will reach
 the end of the list than we can return true.
