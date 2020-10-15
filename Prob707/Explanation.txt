@@ -1,3 +1,6 @@
+Link To Problem:-
+https://leetcode.com/problems/design-linked-list/description/
+
 Approach 1:-
 
 In this approach we are building our own linked list node with name myNode which has two variables in it. The first one is an integer type which is 
