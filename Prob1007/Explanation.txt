@@ -1,0 +1,15 @@
+Link To Problem:-
+https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1). 
+
+In this approach first we are going to find the element by which we will fill the A or B completely. So to do this we are using a map and store the 
+count of each digit in it, the element whose count is found to be greater or equal to length of A is the required element. But we can do a 
+modification here that instead of finding the element by searching whole array we will run loop over array till the size of map is less than 3 as 
+the element in the map will have maax count so that we will find the element with max count. After this we will again run the loop and over the 
+array A and B, if any of the element of A or B at index i is not equal to required element than in that case we will return -1 as we can not make 
+the as required, but if the A's element is not equal to required element but is equal to B's element than we increase the count for A's result or 
+vice-versa for B and A. At last we will return the min of A's result or B's result if all the conditions remains in favour.
