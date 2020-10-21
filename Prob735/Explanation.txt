@@ -1,0 +1,14 @@
+Link To Problem:-
+https://leetcode.com/problems/asteroid-collision/
+
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+In this problem we are going to use a stack to store the remaining asteroids. Whenever a new asteroids will come we will first check that is they 
+will colloide or not that is current asteroid and the asteroid at the top of the stack, if they will not than we will just add the new asteroid to 
+the stack otherwise we will remove all the asteroids which colloides with the current asteroid and will get destroyed due to less weight and if the 
+current asteroid remains till last that it will further not colloide with anyother than we will add that one also to the stack and than will go for 
+the next, otherwise if it will get destroyed than we will leave this one and check for the next one. After traversing the whole array in the last we 
+are with those asteroids which will remains undestroyed due to collision and hence we will return them in a vector data structure.
