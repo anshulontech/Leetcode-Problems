@@ -1,6 +1,3 @@
-// Link To Problem:-
-// https://leetcode.com/contest/warm-up-contest/problems/first-unique-character-in-a-string/
-
 // Solution:-
 
 class Solution

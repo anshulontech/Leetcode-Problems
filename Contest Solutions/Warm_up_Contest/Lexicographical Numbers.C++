@@ -1,6 +1,3 @@
-// Link To Problem:-
-// https://leetcode.com/contest/warm-up-contest/problems/lexicographical-numbers/
-
 // Solution:-
 
 class Solution
