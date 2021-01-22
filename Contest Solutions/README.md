@@ -4,3 +4,4 @@
 - [***Weekly Contest 2***](https://leetcode.com/contest/leetcode-weekly-contest-2)
 - [***Weekly Contest 3***](https://leetcode.com/contest/leetcode-weekly-contest-3)
 - [***Weekly Contest 4***](https://leetcode.com/contest/leetcode-weekly-contest-4)
+- [***Weekly Contest 5***](https://leetcode.com/contest/leetcode-weekly-contest-5)
