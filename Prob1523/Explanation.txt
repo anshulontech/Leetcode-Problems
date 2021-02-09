@@ -1,3 +1,6 @@
+Link To Problem:-
+https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/description/
+
 Approach 1 :-
 
 Time Complexity:-O(N).
