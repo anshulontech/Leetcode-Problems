@@ -1,3 +1,6 @@
+Link To Problem :-
+https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/description/
+
 Approach 1 :-
 
 Time Complexity:-O(N+k*k). -- Where N is number fo nodes and k is number of leaf nodes.
