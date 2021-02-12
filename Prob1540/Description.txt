@@ -1,6 +1,3 @@
-Link To Problem:-
-https://leetcode.com/problems/can-convert-string-in-k-moves/description/
-
 Can Convert String in K Moves
 
 Given two strings s and t, your goal is to convert s into t in k moves or less.
