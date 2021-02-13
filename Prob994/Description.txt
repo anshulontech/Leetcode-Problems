@@ -1,6 +1,3 @@
-Link To Problem:-
-https://leetcode.com/problems/rotting-oranges/description/
-
 Rotting Oranges
 
 In a given grid, each cell can have one of three values:
