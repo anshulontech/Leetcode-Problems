@@ -1,6 +1,3 @@
-Link To Problem:-                                                                                                                   Date:-08/08/2020.
-https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/description/
-
 Vertical Order Traversal of a Binary Tree
 
 Given a binary tree, return the vertical order traversal of its nodes values.
