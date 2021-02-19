@@ -1,6 +1,3 @@
-Link To Problem:-
-https://leetcode.com/problems/next-greater-element-ii/description/
-
 Next Greater Element II
 
 Given a circular array (the next element of the last element is the first element of the array), print the Next Greater Number for every element. 
