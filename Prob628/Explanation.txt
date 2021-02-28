@@ -1,3 +1,6 @@
+Link To Problem:-
+https://leetcode.com/problems/maximum-product-of-three-numbers/description/
+
 Approach 1 :- (Sorting) 
 
 Time Complexity:-O(N*log(N)).
