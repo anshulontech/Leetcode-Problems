@@ -1,0 +1,8 @@
+Problem Links:-
+https://leetcode.com/problems/string-to-integer-atoi/
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+    
+Approach:-
+On itterating the string first we will overcome all the white spaces which are present their and than go for checking it's sign. After this we will run the loop while the string contains numeric digits and change the string to the integer number . At each step we will check that is the number having max or min limit acived or not. If it was not than we simply just update the number else return INT_MAX or INT_MIN.In the last we will return the base as the final answer.
