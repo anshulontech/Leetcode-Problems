@@ -4,7 +4,7 @@ class Solution
 {
 public:
     int maxAscendingSum(vector<int> &nums)
-    {
+    { 
         int maxSum = nums[0];
         int n = nums.size();
 
