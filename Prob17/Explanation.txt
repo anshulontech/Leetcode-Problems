@@ -1,0 +1,7 @@
+Approach:-
+
+Time Complexity:-O(3^N)
+Space Complexity:-O(N).
+
+Approach:-
+    Let us assume we have made different stations for each character of a string and these stations are also subdivided into different platforms (number of platforms depands upon number of alphabets the number will have on it's telephone number). The order of appearance of the platform is based on the character poisition in digit string. Now we will start from the 1st platform of 1st sattion. Insert the character to a helper string s than for next station's platform which should arrise in order. As on last station as no stationis present after that one so we will insert s in res vector and than come back to previous station than go for the next platform of next station such that all combinations can be counted.
