@@ -1,0 +1,7 @@
+Approach 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N).
+    
+Approach:-
+    Initially we will store the count of each word in map. Now we will start to itterate the string s and on going if we will find any part of the words in the string than entered in the if body  and than by performing given operations calling a check function for further words if all the words are find in continues way than we will insert i in the result and make map as that of previous one and go on .
