@@ -1,0 +1,7 @@
+Approach1 :-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    We will scan the tring from the beginning to the end. If the current character is'(' than put it's index inthe string otherwise if the character is ')' than if top index's character is '(' than pop up that otherwise push the index of ')' to the stack .After the scan is done, the stack will only contain the indices of characters which cannot be matched.Then let's use the opposite side - substring between adjacent indices should be valid parentheses. If the stack is empty, the whole inputmstring is valid Otherwise, we can scan the stack to get longest valid substring.
