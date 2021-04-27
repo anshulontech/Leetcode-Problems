@@ -1,0 +1,15 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+    In this we are itterating the array from 0th and on situation when the current value is found to be greater than or equal to target than in that case we will return that index.
+
+Approach 2:-
+
+Time Complexity:-O(Log(N)).
+Space Complexity:-O(1).
+
+Approach:-
+    Use the concept of binary search.
