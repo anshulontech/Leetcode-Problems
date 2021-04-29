@@ -1,0 +1,8 @@
+Approach 1:-
+
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    Starting from 1 we will run the loop while the number temp1 will not become equal to n. Initially we will make a string and initialize it with "1". Now we will follow the operations given in the question to the string s and than store the desired result in a local string named temp and made all changes to that temp string. In the last of each loop we will change s string to temo and hence will obtain the final result as string s.
