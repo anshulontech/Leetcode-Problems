@@ -1,0 +1,8 @@
+Approach 1:-
+
+
+Time Complexity:-O(N^4).
+Space Complexity:-O(N^2).
+    
+Approach:-
+    Using Backtracking approach we will check at each poisistion that is their is n attack of any queen there or not. Check can be done in 3 ways like check in column check for 45` angle anf for 135` angle. If any of these will give false than we will move forward otherwise put Queen there and go for next row.
