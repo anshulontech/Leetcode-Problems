@@ -1,0 +1,7 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+At the starting we will make two variables named result and temp and initialize them with the first value of the array. Now we iterate the whole array starting from the index 1 and change the temp so as to check that the new subarray would start from there or will continue and than update the value of result. At last we return the value of result shows the sum of maximun sun array.
