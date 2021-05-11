@@ -1,0 +1,7 @@
+Approach 1:-
+
+Time Complexity:-O(N*M).
+Space Complexity:-O(1).
+    
+Approach:-
+    In this we are traversing the matrix in spiral form such that we will firts move for first row than move for last column than for last row than for first column and than we reduced our matrix by removing the outer edges using row and col variable and do same for the new matrix formed inside this matrix. The row and col works like as starting will take from row and the new end will form for n-row hence we will reduce the matrix size by 2*row and same for col , Hence by reducing the matrix we can traverse the matrix in spiral form.
