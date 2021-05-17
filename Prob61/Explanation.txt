@@ -1,0 +1,7 @@
+Approach 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+    
+Approach:-
+    Initially we will join the end point or tail of the linked list to the start poisition. Aftr this what we have to do is to take k steps back but we don't have any way to goback in list hence we are using step 2 to reduce k to become less than length of list and step 3 to go to poisition correspond to k step back in list > in last we set temp->next  equal to null representing end of the list and return forward element representing head of the list.
