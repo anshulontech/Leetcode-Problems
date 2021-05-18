@@ -1,0 +1,7 @@
+Approach 1:-
+
+Time Complexity:-O(M*N).
+Space Complexity:-O(N*M).
+    
+Approach:-
+    Initially we will make a m*n grid which reprsents the number of ways to reach the end if the point you are standing is the strting point. Now lwt us we are at last column or at last row than their are only 1 to mave the last that is move down or move right respectively. Now if we are at point (i,j) than we have two choices that is move right or move down , now if we move down than it represents the value at down index represents number of ways to reach end so we have these ways and if we will move right than number at index represents the number of ways to reach down so we will add both number of way sand store them into the current address and so on we can fill the whole matrix. At last value at starting point represents number of ways to reach end.
