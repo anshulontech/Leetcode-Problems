@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    For each valid directory we will add that directory in last to a vector and on encounter with "/../" we will remove the last dirctory from the list and for "/./" we will just move forward. At last we will assign these directories into a string using '/' between them .
