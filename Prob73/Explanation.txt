@@ -1,0 +1,15 @@
+METHOD 1:-
+
+Time Complexity:-O(M*N).
+Space Complexity:-O(N+M).
+    
+Approach:-
+    In this approach what we are going to do is that we will store the rows and columns in different sets of poisition whose value is equal to 0. now we will traverse the row map and than make all elements in store row to zero and than do same for the col set.
+
+METHOD 2:-
+
+Time Complexity:-O(M*N).
+Space Complexity:-O(1).
+
+Approach:-
+    In this approach what we are going to do is that if we will encounter with any 0 than we will make it's row and col first element to be 0 . Now by doing this we traverse the whole matrix . Now we will start to traverse the 1st row and 1col of matrix and if on moving along col if we will find any 0 than we will make it's entire col to 0 and similarely for row , we will make corresponding to 0. This saves our extra space of O(N+M). Here we have done some optimisation for isCol to check wheather we will make 1st col to 0 or not and the code is easy to explain.
