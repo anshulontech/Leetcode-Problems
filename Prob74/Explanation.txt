@@ -1,0 +1,15 @@
+METHOD 1:-
+
+Time Complexity:-O(log(N)+log(M)).
+Space Complexity:-O(1).
+    
+Approach:-
+    First we will found the upper bound of the target in the last column of the matrix using binary search with user defined function searchCol and after this we will execute binary search in that row for target and if we found the target than we will return true in that case else will return false.
+
+METHOD 2:-
+
+Time Complexity:-O(M+N).
+Space Complexity:-O(1).
+    
+Approach:-
+    In this approach we will start from the top right corner of the matrix and if the current element is greater than the target than it will be definately in the left part so we will move leftward else if it is greater than target than we will move as it will definately be in the downward direction . If we found the element than we will return true else in searching if we reach out of the matrix we will return false. 
