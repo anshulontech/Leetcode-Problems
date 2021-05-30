@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N*2^N).
+Space Complexity:-O(N*2^N).
+    
+Approach:-
+    We will generate all the possible combinations which can be formed and than add them into the result.
