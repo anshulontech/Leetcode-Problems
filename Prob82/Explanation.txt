@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+    As we traverse the whole list and if we fund that is their any not present having value same to that of next one than we remove nodes having same value after that and at last also remove that node using previous variable as represented in code.
