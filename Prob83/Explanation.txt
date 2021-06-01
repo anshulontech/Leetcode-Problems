@@ -1,0 +1,8 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+
+    In this we start from head node and move it till last one and check if their any node exist having same value as it's as that of its preciding node. If condition is true than we remove that node from the list . At last we will check that is the last 2 nodes have same value or not. If have than remove the last node else easily return hrad node as final answer.
