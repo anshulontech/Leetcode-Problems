@@ -10,7 +10,7 @@ tack follows last one first out approach and in output we want the integers in t
 Now on storing the integers we are storing them s the given input that is if they are integer or list of integer, so that we can reduce space 
 complexity to some extent.
 
-Function HasNext:-
+Function HasNext :-
 
 In this if the stack is empty that is no more elements are present in the list than we will return false else if the top element of the stack is a 
 list than we will first insert all the element in the stack in integer form untill and unless the top element of the stack becomes an interger and 
