@@ -1,0 +1,25 @@
+METHOD 1:-
+
+Time Complxity:-O(N).
+Space Complexity:-O(1).
+    
+Approach:-
+    Just using inorder traversal.(But not allowed to do so).
+
+Method 2:-
+
+Iterative method using stack.
+
+Approach:-
+    We will start to traverse the tree and try to reach the left ost node of the tree. On reaching the left most node we will push_back its value to res than go for it's right subtree. After travelling it's right tree we come to the it's previous node and than insert it's value to res and than go for right one and by this we will traverse the whole tree.
+
+
+Method 3 :-
+
+Using morris inorder traversal.--- No need of recursion or stack.
+
+Approach:-
+    In this we are going to make the tree as threaded binary tree and follow the operations as shown in code.
+
+Referance:-
+https://www.youtube.com/watch?v=wGXB9OWhPTg
