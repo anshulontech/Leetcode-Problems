@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    In this first we will store the inordered traversal of the BST in a vector. Now we traverse the vector and if the ext value is found to be less than or equal to previous one than we will return false else will check till last and if loop terminates itself than will return true.
