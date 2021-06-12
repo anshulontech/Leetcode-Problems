@@ -1,10 +1,5 @@
+// Link To Problem:-
 // https://leetcode.com/problems/symmetric-tree/
-
-// Time Complexity:-O(N).
-// Space Complexity:-O(N). For recurssion stack.
-    
-// Approach:-
-//     We will check for subtrees that is left subtree will be mirror to right subtree or not and so on.
 
 class Solution
 {
