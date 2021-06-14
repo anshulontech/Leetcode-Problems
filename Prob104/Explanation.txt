@@ -1,0 +1,16 @@
+METHOD 1:-
+
+Time Complexity:-O(log(N)) Where N is total number of nodes.
+Space Complexity:-O(1).
+    
+Approach:-
+    We are going to traverse the whole tree with each level one by one and chck that that what is its max length beneath that node by calling again the function maxDepth. The 1 in the return statement reresents that node to include in the answer.
+
+
+METHOD 2:- USING QUEUE->BFS.
+
+Time Complexity:-O(N)
+Space Complexity:-O(N).
+
+Approach:-
+    In breadth first approach we are going to traverse the whole tree with each node and than try to calculate the length of tree by finding max of its children.
