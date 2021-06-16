@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N).
+    
+Approach:-
+    Initially we will store the index of all number of inorder in a map and run the loop. Now if the index of the node in inorder is less than previous node value than it will on it's left otherwise on it's right. By doing so we will get our final tree. Here we are going to itterate the postorder from back side.
