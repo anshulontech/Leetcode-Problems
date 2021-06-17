@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    Just Do the simple level order traversal with each level in different vector and than reverse the whole vector of vector to get the bottom - top traversal.
