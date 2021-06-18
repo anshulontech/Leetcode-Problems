@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Approach:-
+    Initially we store the linked list to a array. Now if an array is in assending order than it's middle element reepresents the root node and for it's left node the middle element of left part represents left node and so on for both left part and right part . So in this approach we are going to use the similar method to solve our problem. The code is clear and easy to understand.
