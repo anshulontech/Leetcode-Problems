@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Compexity:-O(N).
+Space Complexity:-O(1).
+    
+Approach:-
+    We will traverse the tree as usual and on encounter the leaf node we will check that if the current depth is less than min_depth than we will update the value of curr depth and hence in last return the min_depth value.
