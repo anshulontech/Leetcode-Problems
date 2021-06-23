@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N*log(N)).
+Space Complexity:-O(N).
+
+Approach:-
+    In this Problem What we are going to do is to change the left child of a node to be it's right child and than making right child be the right child of rightmost node in left subtree. So here on first Node we will first find the rightmost node and than making right child of root to be the right child of rightmost node of left subtree. Now after this we will make left child to be it's right child and make left child NULL+ and so on. Similarly we will follow the process for all nodes present in the tree. 
