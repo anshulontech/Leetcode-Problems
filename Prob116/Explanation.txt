@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N). 
+Space Complexity:-O(N).
+
+Approach:-
+    I this what we are going to do is to store all the nodes having same level in a vector in order from left to right and than on traversing the vector we will set next pointer to the next element to the vector. and hence we can generate the required tree.
