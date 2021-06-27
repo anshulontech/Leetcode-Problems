@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(K^2).
+Space Complexity:-O(K^2).  -- Extra space is used.
+    
+Approach:-
+    Using the property of pascal triangle will update the value on the behalf of previous row. 
