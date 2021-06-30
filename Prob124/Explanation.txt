@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(N).
+    
+Approach:-
+    For each node we will calculate that what is max sum to it's left and to it's right and based on this approach we will get the max sum. Otherwise the code is clear and easy to understand.
