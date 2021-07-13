@@ -1,0 +1,8 @@
+METHOD 1:-
+
+
+Time Complexity:-O(N).
+Space Complexity:-O*(1).
+
+Approach:-
+    We will set a itterator for 0th and last index and check that is both these characters are alphanumeric or not. If they will than we will check that is s[start]==s[end] or not . If they were not than return false else take 1 step forwar in respective directions and if they were not alphanumeric than we will again move forward in respective directions . If we will terminate the loop than it represents that it is a pallindrome else it is not.
