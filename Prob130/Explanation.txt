@@ -1,0 +1,15 @@
+METHOD 1:-
+
+Time Complexity:-O(N^4).(Time Limit Exceed)
+Space Complexity:-O(1).
+
+Aproach:-
+    In this approach what we are going to do is to check for each 'O' that is this 'O' and it it's adjacent one will follow the condition or not. If they were than we will assign all of them equal to 'X' else leave them. But this will give time limit exceed hence we have a better approach which is discussed below.
+
+METHOD 2:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(1).
+    
+Aproach:-
+    In this approach what we are going to do is that all the 'O' which are touched with the boundary we will make all of them equal to a different character let it be 'A'. And left all other 'O' which should be changed into 'X' in their original state. Now we are again traverse the matrix and if we will found any 'A' than it should be changed into 'O' else all other character should be in 'X' type hence we wll convert all of them into 'X' and hence we can generate our final answer.
