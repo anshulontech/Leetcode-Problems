@@ -1,0 +1,15 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    In this first we will store the count of each numbr in a map. Now we will again traverse the array and for each integer we will go forward nad backward till their count will not become equal to zero . Npow we will check the length and if it will be greater than previous one than we will update the answer else just make their all count to 0. At last the max count is the ans.
+
+METHOD 2:-
+
+Similar Approach as that of previous one but here we are not going to traverse the array again an we are going to traverse the map again.
+
+METHOD 3:-
+
+Similar approach using set.
