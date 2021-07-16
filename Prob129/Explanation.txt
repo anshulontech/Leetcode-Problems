@@ -1,0 +1,15 @@
+METHOD 1:-
+
+Time Coplexity:-O(N).
+Space complexity:-O(N+H).
+
+Approach:-
+    We will traverse the whole tree and as we will move forward we will insert the value of the root to the helper string and on reaching the leaf node we will add the value of string in integer to the result and move forward as we do in the preorder traversal . At the last we are with the answer stored in res variable.
+
+METHOD 2:-
+
+Time Complexity:O(N).
+Space Complexity:-O(N) -- For recurssion stack.
+
+Approach:-
+    Same as that of above one but here we are not going to use the string else we are going to store the result in an integer variable and on encounter with leaf node we can add that one to the final result.
