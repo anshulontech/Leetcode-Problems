@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+    In this problem what we are going to do is to make two pointers named slow and fast and make them equal to head. Until slow is not equal to fast we run the loop and make slow =slow->next and fast=fast->next. Termination conditions are that if slow==fast return true or if slow->next==NULL||fast->next==NULL||fast->next->next==NULL returns false.
