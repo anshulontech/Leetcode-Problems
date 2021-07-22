@@ -1,0 +1,12 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    In this what we are doing to do is that is we will first store all the node in an array and now we will traverse the array such that we will first attach end node to curr and than update the curr and than add start node to curr and so on. So buy this way we are just attaching the nodes back to each other not modifying values.
+ 
+
+METHOD 2:-
+
+Another Approach is that we will first make reverse the second half of the list and than join the nodes in order.
