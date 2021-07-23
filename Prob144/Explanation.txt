@@ -1,0 +1,23 @@
+METHOD 1:-
+
+Time Coplexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    Using recurssion we are going to see preorder traversal.
+
+METHOD 2:-
+
+Time Coplexity:-O(N).
+Space Complexity:-O(N).
+
+Approach:-
+    Using iteration we are going to see preorder traversal.
+
+METHOD 3:-
+
+Time Coplexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+    Using Moris traversal we are going to see preorder traversal.
