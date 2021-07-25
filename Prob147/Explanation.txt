@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(1).
+    
+Approach:-
+    We are just using the insertion sort algorithm for this just as we are using for array.
