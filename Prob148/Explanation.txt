@@ -1,0 +1,8 @@
+METHOD 1:-
+
+Time Complexity:-O(N*log(N)).
+Space Complexity:-O(1).
+    
+Approach:-
+    Using just merge sort approach to sort the list by dividing it into two halfes and than sort them independentaly 
+and than merge them back .
