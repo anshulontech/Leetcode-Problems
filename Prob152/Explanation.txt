@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+    
+Approach:-
+    Using the curr_max and curr_min we are going to store the max and min value till that number. The min number is store as that if two -ve number ssare present than we have to make think of about them. Now if a zero will be encountered than al numbers will automatically become equal to zero and a new array will start from there.
