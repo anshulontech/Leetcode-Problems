@@ -1,0 +1,21 @@
+METHOD 1:-
+
+    Time Complexity:-O(M*N).
+    Space Complexity:-O(1).
+        
+Approach:-
+    Checking for each node that is nodes are same are not.
+
+Method 2:
+    Time Complexity:-O(N+M).
+    Space Complexity:-O(N).
+
+Approach:-
+    Storing all the node in the set and on traversing 2nd list checking that is any nodes are same or not. 
+
+Method 3:-
+    Time Complexity:-O(N+M).
+    Space Complexity:-O(1).
+
+Approach:-
+    If a list become empty than we are redirecting it to the start of next list and do untill both will not become same. For no match case both will become equal to null in the last time. This loop will rum ma for (N+M+2) times hence we are required to redirect it for single time.
