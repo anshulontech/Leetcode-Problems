@@ -27,3 +27,4 @@
 - [***Biweekly Contest 36***](https://leetcode.com/contest/biweekly-contest-36/)
 - [***Biweekly Contest 56***](https://leetcode.com/contest/biweekly-contest-56/)
 - [***Weekly Contest 186***](https://leetcode.com/contest/weekly-contest-186/)
+- [***Weekly Contest 252***](https://leetcode.com/contest/weekly-contest-252/)
