@@ -30,3 +30,4 @@
 - [***Weekly Contest 252***](https://leetcode.com/contest/weekly-contest-252/)
 - [***Weekly Contest 251***](https://leetcode.com/contest/weekly-contest-251/)
 - [***Biweekly Contest 57***](https://leetcode.com/contest/biweekly-contest-57/)
+- [***Weekly Contest 253***](https://leetcode.com/contest/weekly-contest-253/)
