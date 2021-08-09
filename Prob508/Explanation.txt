@@ -1,0 +1,12 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Compleixty:-O(N).
+    
+Approach:-  (One Pass Hash Map)
+    Initially we will use ModifyTree function to modify the tree such that the value of root node is the sum of it's subtree and also store the sum into a hash map. Now we will iterate the hash map and the sum's having max frequency are taken into a vector as final answer.
+
+METHOD 3:-
+
+Approach:-
+    Similar that of above one but here to calculate the max_freq we are doing operations only when we are modifying the tree so that we have no more requirment of one more pass to the hash map.
