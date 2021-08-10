@@ -1,0 +1,21 @@
+METHOD 1:-
+
+Time Complexity=O(N).
+Space Complexity=O(N).
+
+Approach:-
+    First of all we make a unordered map or hash table in which key represents sum till that node and value represents number of ways 
+    by which we can reach to that sum. We start traversing each node and update its value by making it equalto sum till that node 
+    and also on other hand adding values to the map. At each node we will check that is any value equal to (root->val-sum) exist in 
+    the map or not , if yes than we add its corresponding value to output result otherwise add 0.after this we pass root->left and 
+    root->right and just follow the recursion process.
+
+METHOD 2:-
+
+Time Complexity=O(N^2).
+Space Complexity=O(1).
+
+Approach:-
+    In this we use recursion .In first by calling the pathSum function we will check that is sum of nodes equal to target exist 
+    including first node or not. On agai calling pathSum with root->left represents that is sum exist starting with 2nd node and so 
+    on. So we can say that in this approch we will check that is their sum exist by checking each node.
