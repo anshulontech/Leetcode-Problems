@@ -1,0 +1,19 @@
+METHOD 1:-
+
+Time Complexity:-O(N^2).
+Space Compleixty:-O(N^2). For recurssion stack.
+    
+    Approach:- (This Approach gives time limit exceed for only 1 case that is on leetcode it passes 123/124 test cases). In this 
+what we are going to do is that we will check that is there more profit in including this house or not, so for this we will 
+run two loops first to include the current node and the other to exclude it and than we will return the maximum of them . By 
+doing the current node we will check it for the eft and right subtrees and so on.
+
+
+METHOD 2:-
+
+Time Complexity:-O(N).
+Space Compleixty:-O(N).
+
+Approach:-
+    In this approach we are doing the same thing but here what we are going to do is that for each node we will store the max 
+result for it subtree in a map so that if we want the value for this subtree than we have no need to traverse it again.
