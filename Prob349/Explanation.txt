@@ -1,0 +1,17 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    Initially we will store the elements of nums1 in a set and than go for the nums2 and if found any integer in nums2 that is in
+    set than we will first remove that element from the set and than add that one to the result vector and finally return the 
+    result vector.
+
+METHOD 2:-
+
+Time Complexity:-O(log(N)).
+Space Complexity:-O(1).
+
+Approach:-
+    First we will sort the array and than use two pointer concept to store the numbers which occures in both the vectors.
