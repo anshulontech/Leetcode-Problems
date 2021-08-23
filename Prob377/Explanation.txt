@@ -1,0 +1,24 @@
+METHOD 1:-
+
+Time Complexity:-O(N*Log(N)+(target+1)*N).
+Space Complexity:-O(target+1).
+
+Approach:-
+    In this what we are going to do iss that we will use bottom - up approach. Hence we will first check that how many ways are 
+    there to calculate the sum 0 than for 1 than for 2 and so on till target, Now here we are making a dp array which will help us 
+    to remember that for particular target how many ways are there and hence we will use this for help s that we have no need to 
+    calculate the sum of certain targets which were already discovered.
+
+METHOD 2:-
+
+Time Complexity:-O((target+1)*N).
+Space Complexity:-O(target+1).
+
+Approach:-
+    Same As that of above but here we are not using sorting here we will traverse the whole array taret +1 times but there if the
+    value goes higher than current target than we can break the loop.
+
+METHOD 3:-
+
+Approach:-
+    This is Top-Down Approach for this problem.
