@@ -1,0 +1,8 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+
+Approach:- (Iterative)
+    We are just following the approach of level order traversal of bnary tree but here the difference is that in case of binary 
+    tree we are checking for left and right child but here we are checking for all the children elements.
