@@ -1,0 +1,9 @@
+METHOD 1:-
+
+Time Complexity:-O(N*amount).
+Space Complexity:-O(amount).
+    
+Approach:-
+    In this what we are doing is that we will us top - bottom approach in which we will check for 
+    each amount which is less than given amount. And store their result in an array and for the 
+    further amount we dont need to look backward but will just get their values from that vector.
