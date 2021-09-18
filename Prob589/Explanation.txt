@@ -1,0 +1,8 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    Same as that of preorder traversal of binary tree. Here first we call the first child of the node than next one than next and 
+    so on. And store all their value in the vector and in last return that one.
