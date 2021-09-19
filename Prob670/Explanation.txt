@@ -1,0 +1,9 @@
+METHOD 1:-
+
+Time Complexity:-O(N^2).
+Space Complexity:-O(1).
+    
+Aproach:-
+    In this wwhat we are going to do is that we will start to traverse the num in string from 0th index and if found at any index 
+    value than 0 index than we will swap these two and than return the number if it is not than we will check for the ndex 1 and 
+    son on.
