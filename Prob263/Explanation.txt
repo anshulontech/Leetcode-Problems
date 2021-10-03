@@ -1,0 +1,5 @@
+METHOD 1:-
+
+Approach:-
+    Just divide by 2, 3 and 5 as often as possible and then check whether we arrived at 1. Also try divisor 4 if that makes the 
+    code simpler / less repetitive.
