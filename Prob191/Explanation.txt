@@ -1,0 +1,16 @@
+METHOD 1:-
+
+Time Complexity:-O(N) Where N is nth poisition of last 1 bit.
+Space Complexity:-O(1).
+    
+Approach:-
+    In this we are going to calculate the last bit and checking that is this 1 or not. If it will than we increase the count else 
+    just leave the number.
+
+METHOD 2:-
+
+Time Complexity:-O(N) Where N is number of 1 bits.
+Space Complexity:-O(1).
+
+Approach:-
+    Same Approach but faster approach.
