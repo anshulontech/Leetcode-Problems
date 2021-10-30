@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+    
+Approach:-
+    We will traverse the array and on each encounter with a number we will make the corresponding number to it's negative . Now if After making it negative it remains poisitive than we cnclude that this index already occured in the array hence we ill add that to result.
