@@ -1,0 +1,9 @@
+METHOD 1:-
+
+Time Complexity:-O(3*N).
+Space Complexity:-O(N).
+    
+Approach:-
+    Initialy we will store the count of each element in the map. After this we will make a vector of vector of string where we will store the string at the index of their count that is their count repreents the index in bucket vector.After this we will run a loop from last and than store first k elements in res vector and this represents the final answer.
+    
+    NOTE:- For alphabetical order of the words having same count the map will store them in alphabatical order directly , so their is no need to do for this.
