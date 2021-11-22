@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(1).
+
+Approach:-
+    We will define two variables named i and j and assign them with value 0. Now on iterating the loop we will check that is the value of nums[i] is equal to 0 or not . If the value of nums[i] is equal to 0 than we just increase the value of i otherwise we will swap nums[i] and nums[j] and increase the value of j.This results in the shifting of all 0 in the last without changing the order of the other elements in the list.
