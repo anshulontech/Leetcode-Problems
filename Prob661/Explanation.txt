@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity : -O(N ^ 2).
+Space Complexity : -O(N ^ 2).To store the result.
+
+ Approach :-
+    For each cell we will calculate the sum of adjacent cells and that cell and divide it with number of adjacent cell+1 (to include that cell also) and store the tresult in another grid.
