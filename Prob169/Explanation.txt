@@ -1,0 +1,17 @@
+Method 1:- Using Moore's Algorithm
+
+Time Complexity;-O(N).
+Space Complexity;-O(1).
+    
+Help:-
+    https://www.youtube.com/watch?v=n5QY3x_GNDg
+
+Method 2:- Can be used using hash map as we will store the count of each element and than on traversing the map we will check that is any number has more than N/2 occurances or not .
+
+Method 3:-
+We will first sort the array and than check for the occurance of each nuber if any number was found to have more than N/2 occurance than we will return that number.
+
+Method 4:- Using bit masking
+
+Help:-
+https://www.youtube.com/watch?v=0s3zqYaDInE
