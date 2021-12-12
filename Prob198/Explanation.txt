@@ -1,0 +1,7 @@
+METHOD 1:-
+
+Time Complexity:-O(N).
+Space Complexity:-O(N).
+    
+Approach:-
+    In this we are going to make a dp array which will tell us that what is the max number of money we can steel if we are robbing i+1 houses. In this table we are setting the first 2 elements than moving forward. Now let we are at i index than we will check that is robbing current house + robbing i-2 houses will make more money than robbing just i-1 houses or not . If it will than we update value of i th house  to be new one else just robbing i-1 houses and leaving that house.
