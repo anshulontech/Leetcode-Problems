@@ -20,7 +20,7 @@ public:
             while (i < n && s[i] == x[i])
                 i++;
 
-            if (i != 0)
+            if (i != 0 && i == x.size())
                 res++;
         }
 
